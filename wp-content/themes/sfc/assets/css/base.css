@@ -35,7 +35,7 @@ a,
 a:active,
 a:visited{
   text-decoration: none;
-  color: #3D6E13;
+  color: #333;
 }
 strong,b{ font-weight: 700; }
 em{ font-style: italic; }

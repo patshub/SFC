@@ -4,7 +4,7 @@
   <section id="page-header">
     <div class="container">
       <div class="headline">
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs white">
           <li><a href="/sfc">HOME</a></li>
           <li><a href="/sfc/media">MEDIA</a></li>
         </ul>

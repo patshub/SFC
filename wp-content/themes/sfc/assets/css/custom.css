@@ -377,7 +377,7 @@ h2.section-title{
 /* PAGE HEADER */
 #page-header{
   background-image: url('../images/bg-node-header.png');
-  background-size: auto 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0 40px 0;
@@ -385,27 +385,28 @@ h2.section-title{
   transition-duration: .2s;
 }
 #page-header:hover{
-  background-size: auto 110%;
+  background-size: 110% 110%;
   transition-duration: .2s;
 }
-.headline ul.breadcrumbs,
-.headline ul.breadcrumbs li{
+
+ul.breadcrumbs.white,
+ul.breadcrumbs.white li{
   margin: 0;
   color: #fff;
 }
-.headline ul.breadcrumbs li a,
-.headline ul.breadcrumbs li:after{
+ul.breadcrumbs.white li a,
+ul.breadcrumbs.white li:after{
   color: #fff;
 }
-.headline ul.breadcrumbs li,
-.headline ul.breadcrumbs li a{
+ul.breadcrumbs.white li,
+ul.breadcrumbs.white li a{
   text-transform: uppercase;
   font-size: .9em;
 }
-.headline ul.breadcrumbs li{
+ul.breadcrumbs.white li{
   opacity: .7;
 }
-.headline ul.breadcrumbs li:last-child{
+ul.breadcrumbs.white li:last-child{
   font-weight: 300;
   opacity: 1;
 }
@@ -413,7 +414,7 @@ h2.section-title{
 .headline h1{
   margin: auto;
   color: #fff;
-  font-weight: 700;
+  font-weight: 100;
 
   font-size: 3em;
   text-transform: uppercase;
@@ -427,7 +428,7 @@ h2.section-title{
   display: inline-block;
   width: 35px;
   vertical-align: middle;
-  margin:0 10px;
+  margin:0 5px;
 }
 
 .headline.inverse{
@@ -497,46 +498,47 @@ h2.section-title{
 
 /* BASIC PAGE */
 #node #page-header{
-  padding: 100px 0;
+  padding: 170px 0;
   background-size: cover;
-  background-image: url('../images/bg-page-header.png');
+  background-image: url('../images/bg-post.png');
+}
+.push-up{
+
+  margin: -250px 0 0 0;
 }
 #node h1{
   font-weight:400;
   text-align: center;
   font-size: 2.25em;
-  text-transform:  none;
+  text-transform:  uppercase;
 }
-#node .headline{
-  width: 750px;
-  max-width: 90%;
-  display: block;
-  margin: auto;
-}
-#main-content{
-  width: 750px;
-  max-width: 100%;
-  display: block;
-  margin: -100px auto 0 auto;
-}
-#main-content .headline{
-  margin:0 0 35px 0;
-}
-#main-content .headline ul.breadcrumbs{
-  display: table;
-  margin: auto;
-  width: auto;
+#node .breadcrumbs{
+  margin-bottom: 10px;
 }
 
-#main-content .content-box{
+#content-box .headline{
+  margin:0 0 10px 0;
+}
+#content-box{
   background-color: #fff;
-  width: 100%;
   padding:25px;
   box-sizing: border-box;
 }
-#main-content h2:first-child,
-#main-content h3:first-child,
-#main-content p:first-child{
+
+#content-box .headline ul.breadcrumbs{
+  display: table;
+  width: auto;
+}
+#content-box .headline h1{
+  text-align: left;
+}
+#content-box .headline h1,
+#content-box .meta > div{
+  color: #333;
+}
+#content-box h2:first-child,
+#content-box h3:first-child,
+#content-box p:first-child{
   margin-top: 0;
 }
 
