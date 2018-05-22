@@ -26,6 +26,7 @@ ul.menu li a{
   font-size: .85em;
   font-weight: 400;
   color: #fff;
+  display: block;
 }
 
 ul.menu img.icon-home{
@@ -50,7 +51,7 @@ ul.menu img.icon-home{
 
 h2.section-title{
   font-size:2.75em;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 30px 0;
 }
 
@@ -235,7 +236,7 @@ h2.section-title{
 }
 #our-programs h2{
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
 }
 #our-programs h3{
   font-weight: 700;
@@ -376,7 +377,7 @@ h2.section-title{
 /* PAGE HEADER */
 #page-header{
   background-image: url('../images/bg-node-header.png');
-  background-size: 100% 100%;
+  background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0 40px 0;
@@ -384,7 +385,7 @@ h2.section-title{
   transition-duration: .2s;
 }
 #page-header:hover{
-  background-size: 110% 110%;
+  background-size: auto 110%;
   transition-duration: .2s;
 }
 .headline ul.breadcrumbs,
@@ -412,7 +413,7 @@ h2.section-title{
 .headline h1{
   margin: auto;
   color: #fff;
-  font-weight: 300;
+  font-weight: 700;
 
   font-size: 3em;
   text-transform: uppercase;
@@ -486,6 +487,13 @@ h2.section-title{
   padding: 30px 0;
 }
 
+#media .songs h2.letter-category{
+  font-size: 2em;
+  margin: 20px 0 0 0;
+}
+#media .songs h2.letter-category:before{
+  display: none;
+}
 
 /* BASIC PAGE */
 #node #page-header{
@@ -494,7 +502,7 @@ h2.section-title{
   background-image: url('../images/bg-page-header.png');
 }
 #node h1{
-  font-weight:300;
+  font-weight:400;
   text-align: center;
   font-size: 2.25em;
   text-transform:  none;
@@ -553,6 +561,10 @@ h2.section-title{
   font-size: .9em;
   vertical-align: top;
 }
+.meta .post-info{
+  text-align: center;
+  line-height: 140%;
+}
 .meta .post-date:before,
 .meta .post-category:before,
 .meta .post-comments:before{
@@ -570,4 +582,27 @@ h2.section-title{
 }
 .meta .post-comments:before{
   content: "\f075";
+}
+
+
+/* SINGLE MUSIC */
+.music table.verse-line{
+  margin:0 0 4.5% 0;
+}
+.music td{
+  padding: 0 5px 0 0;
+  border: none;
+}
+.music td.chords{
+  font-weight: 700;
+  color: #3D6E13;
+}
+.music tbody{
+  line-height: 100%;
+}
+.chordwp-column {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;
+    width: 50%;
 }

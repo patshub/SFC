@@ -29,7 +29,7 @@
               <div class="col">
                 <a href="/sfc/articles">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-news.svg"/>
-                  <h3>NEWS</h3>
+                  <h3>ARTICLES</h3>
                 </a>
               </div>
             </div>
@@ -172,7 +172,7 @@
 
       <section id="news">
         <div class="container">
-          <h2 class="section-title">LATEST NEWS</h2>
+          <h2 class="section-title">LATEST ARTICLES</h2>
           <?php
           $args = array(
             'posts_per_page' => 9,

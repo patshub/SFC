@@ -5,11 +5,11 @@
       <div class="headline">
         <ul class="breadcrumbs">
           <li><a href="/sfc">HOME</a></li>
-          <li>LATEST NEWS</li>
+          <li>LATEST ARTICLES</li>
         </ul>
         <div class="has-icon">
           <!-- <img class="icon" src="<?php bloginfo('template_url'); ?>/assets/images/icon-news-white.svg"/> -->
-          <h1>LATEST NEWS</h1>
+          <h1>LATEST ARTICLES</h1>
         </div>
       </div>
     </div>

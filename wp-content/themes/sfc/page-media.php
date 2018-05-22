@@ -93,6 +93,31 @@
   <section class="songs">
     <div class="container">
       <h2 class="section-title">SONGS</h2>
+        <div>
+        <?php
+        $args = array(
+          'posts_per_page' => 100,
+          'post_type'   => 'crd_sheet_music',
+          'orderby' => 'title',
+          'order' => 'ASC'
+        );
+        $music = new WP_Query( $args );
+        $letter=' ';
+        if ( $music->have_posts() ) { ?>
+        <?php	while ( $music->have_posts() ) { $music->the_post(); ?>
+
+        <?php $title = get_the_title();
+        $initial=strtoupper(substr($title,0,1));
+        if($initial!=$letter){ ?>
+        </div>
+        <div class="col-3">
+          <?php echo '<h2 class="letter-category">'.$initial.'</h2>'; $letter=$initial;
+        } ?>
+          <span><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></span><br/>
+        <?php } wp_reset_postdata(); ?>
+        <?php } else { // no posts found
+        } ?>
+        <div>
     </div>
   </section>
 </div>

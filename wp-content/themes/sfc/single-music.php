@@ -6,7 +6,7 @@
       <div class="headline">
         <ul class="breadcrumbs">
           <li><a href="/sfc">HOME</a></li>
-          <li><a href="/sfc/articles">LATEST ARTICLES</a></li>
+          <li><a href="/sfc/articles">LATEST NEWS</a></li>
           <li><?php the_title(); ?></li>
         </ul>
         <h1><?php the_title(); ?></h1>
