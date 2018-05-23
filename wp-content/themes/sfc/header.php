@@ -34,11 +34,11 @@
       <header>
         <script>
           $( document ).ready(function() {
-            $('ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home-white.svg"/></a></li>');
+            $('ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>');
           });
         </script>
         <div class="container">
-          <a href="/sfc"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-white.svg"/></a>
+          <a href="/sfc"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg"/></a>
           <!-- Site Menu -->
           <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container' => false ) ); ?>
           <!-- <ul class="menu">

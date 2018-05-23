@@ -17,7 +17,7 @@ body{
 /************** TYPOGRAPHY **************/
 h1,h2,h3,h4{
   line-height: 130%;
-  font-family: 'Montserrat';
+  font-family: 'Lato';
 }
 #content-box h1,
 #content-box h2,
@@ -58,7 +58,7 @@ img{
 
 section{
   width: 100%;
-  margin: auto auto 30px auto;
+  margin: auto auto 45px auto;
   display: block;
   clear: both;
 }

@@ -3,8 +3,9 @@ header{
 
   position: fixed;
   width: 100%;
-  background-color: rgba(0,0,0,0.45);
+  background-color: #fff;
   z-index: 999;
+  box-shadow: 1px 1px 5px lightgrey;
 }
 img.logo{
   width: 100px;
@@ -24,7 +25,7 @@ ul.menu li:first-child{
 }
 ul.menu li a{
   font-weight: 600;
-  color: #fff;
+  color: #333;
   display: block;
 }
 
@@ -55,7 +56,7 @@ h2.section-title{
 }
 
 .excerpt p{
-  opacity: .6!important;
+  opacity: .7!important;
   line-height: 160%!important;
 }
 
@@ -76,15 +77,10 @@ h2.section-title{
 #columns .col-4:hover .img{ height: 250px; }
 #columns .col-3:hover .img{ height: 180px; }
 
-#columns [class*='col-']:hover .img{
-  background-size: auto 110%;
-  transition-duration: .2s;
-  border-bottom: 7px solid #3D6E13;
-}
 #columns [class*='col-']:hover a.btn{
   transition-duration: .2s;
-  border: 1.5px solid #3D6E13;
-  background-color: #3D6E13;
+  border: 1.5px solid #65A72C;
+  background-color: #65A72C;
   color: #fff;
 }
 #columns .img .icon-tag{
@@ -181,7 +177,7 @@ h2.section-title{
 
 /* FEATURED BUTTONS */
 #featured-btns{
-  padding: 45px 0;
+  padding: 30px 0;
 }
 #featured-btns .wrap{
   width: 650px;
@@ -190,7 +186,7 @@ h2.section-title{
 }
 #featured-btns h3{
   text-align: center;
-  font-size: 1em;
+
   font-weight: 400;
 }
 #featured-btns img{
@@ -205,14 +201,24 @@ h2.section-title{
 /* WHAT WE DO */
 #what-we-do{
   padding: 45px 0;
-  background-color: #f7f7f7;
+  background-image: url('../images/bg-what-we-do.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-color: #f7f7f7; */
+
 }
 #what-we-do h2.section-title{
   text-align: center;
+  color: #fff;
 }
 #what-we-do h3{
-  font-weight: 600;
+  font-weight: 400;
   margin:15px 0 5px 0;
+  color: #fff;
+}
+#what-we-do p{
+  color: #fff;
 }
 #what-we-do .img{
   height: 150px;
@@ -223,15 +229,20 @@ h2.section-title{
   background-size: 110%;
   transition-duration: 0.2s;
 }
-
+#what-we-do .col{
+  padding-bottom: 0!important;
+}
 /* OUR PROGRAMS */
 #our-programs{
   text-align: center;
 }
+#our-programs .col{
+  padding-bottom: 0;
+}
 #our-programs .col-4:hover a.btn{
   transition-duration: .2s;
-  border: 1.5px solid #3D6E13;
-  background-color: #3D6E13;
+  border: 1.5px solid #65A72C;
+  background-color: #65A72C;
   color: #fff;
 }
 #our-programs h2{
@@ -380,7 +391,7 @@ h2.section-title{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 120px 0 40px 0;
+  padding: 130px 0 50px 0;
   text-align: center;
   transition-duration: .2s;
 }
@@ -470,7 +481,7 @@ ul.breadcrumbs.white li:last-child{
   text-align: left;
 }
 #media .col-4:hover h2{
-  color:#3D6E13;
+  color:#65A72C;
 }
 
 #media #page-header{
@@ -498,7 +509,8 @@ ul.breadcrumbs.white li:last-child{
 }
 .push-up{
 
-  margin: -250px 0 0 0;
+  margin: -250px auto 0 auto;
+  display: block;
 }
 #node h1{
   font-weight:600;
@@ -594,7 +606,7 @@ ul.breadcrumbs.white li:last-child{
 }
 .music td.chords{
   font-weight: 600;
-  color: #3D6E13;
+  color: #65A72C;
 }
 .music tbody{
   line-height: 100%;

@@ -29,7 +29,7 @@
               <div class="col">
                 <a href="/sfc/articles">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-news.svg"/>
-                  <h3>ARTICLES</h3>
+                  <h3>Articles</h3>
                 </a>
               </div>
             </div>
@@ -37,7 +37,7 @@
               <div class="col">
                 <a href="#">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-events.svg"/>
-                  <h3>EVENTS</h3>
+                  <h3>Events</h3>
                 </a>
               </div>
             </div>
@@ -45,7 +45,7 @@
               <div class="col">
                 <a href="#">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-search-light.svg"/>
-                  <h3>SEARCH</h3>
+                  <h3>Search</h3>
                 </a>
               </div>
             </div>
@@ -53,7 +53,7 @@
               <div class="col">
                 <a href="#">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-media.svg"/>
-                  <h3>MEDIA</h3>
+                  <h3>Media</h3>
                 </a>
               </div>
             </div>
@@ -61,7 +61,7 @@
               <div class="col">
                 <a href="#">
                   <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-contact.svg"/>
-                  <h3>CONTACT</h3>
+                  <h3>Contact</h3>
                 </a>
               </div>
             </div>
@@ -122,7 +122,7 @@
               <div class="col">
                 <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-ancop.svg"/></a>
                 <a href="#"><h3>ANSWERING THE CRIES OF THE POOR</h3></a>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
+                <span class="excerpt"><p>ANCOP is a Christian, Catholic non-profit organization that dedicates itself to proclaiming CHRIST, and the Christian faith, by uplifting the plight of the poor.</p></span>
                 <a href="#" class="btn">LEARN MORE</a>
               </div>
             </div>
