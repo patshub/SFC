@@ -147,7 +147,7 @@
       <section id="prayer-intentions">
         <img class="leaves-down" src="<?php bloginfo('template_url'); ?>/assets/images/leaves-down.png"/>
         <div class="container">
-          <div class="col-4">
+          <div class="col-5">
             <h3 class="section-title">PRAYER INTENTIONS</h3>
             <p>
               “<strong>Let us sign ourselves</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis feugiat est. Donec facilisis eget nibh nec lacinia. Phasellus vulputate.”

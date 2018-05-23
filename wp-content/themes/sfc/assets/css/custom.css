@@ -23,8 +23,7 @@ ul.menu li:first-child{
   vertical-align: top;
 }
 ul.menu li a{
-  font-size: .85em;
-  font-weight: 400;
+  font-weight: 600;
   color: #fff;
   display: block;
 }
@@ -50,8 +49,8 @@ ul.menu img.icon-home{
 }
 
 h2.section-title{
-  font-size:2.75em;
-  font-weight: 400;
+  font-size:2em;
+  font-weight: 600;
   margin: 0 0 30px 0;
 }
 
@@ -98,7 +97,7 @@ h2.section-title{
   margin:10px 0 0 0;
 }
 #columns h3{
-  font-weight: 400;
+  font-weight: 600;
 }
 #columns p.meta{
   margin: 0;
@@ -192,9 +191,10 @@ h2.section-title{
 #featured-btns h3{
   text-align: center;
   font-size: 1em;
+  font-weight: 400;
 }
 #featured-btns img{
-  width: 80px;
+  width: 60px;
   display: block;
   margin: 0 auto 15px auto;
 }
@@ -211,7 +211,7 @@ h2.section-title{
   text-align: center;
 }
 #what-we-do h3{
-  font-weight: 700;
+  font-weight: 600;
   margin:15px 0 5px 0;
 }
 #what-we-do .img{
@@ -239,7 +239,7 @@ h2.section-title{
   font-weight: 400;
 }
 #our-programs h3{
-  font-weight: 700;
+  font-weight: 600;
   color: #333;
   margin:15px 0 5px 0;
   transition-duration: .2s;
@@ -264,7 +264,7 @@ h2.section-title{
 
   padding: 45px 0;
 }
-#prayer-intentions .col-4{
+#prayer-intentions .col-5{
   /* background-color: #f7f7f7; */
   /* padding: 35px; */
   box-sizing: border-box;
@@ -281,7 +281,7 @@ h2.section-title{
 #prayer-intentions p{
   text-align: center;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
 }
 #prayer-intentions form{
   margin-top: 30px;
@@ -307,10 +307,10 @@ h2.section-title{
   display: inline-block;
 }
 #prayer-intentions .field-group.two input:first-child{
-  margin-right: 1.5%;
+  margin-right: 1.35%;
 }
 #prayer-intentions .field-group.two input:nth-child(2){
-  margin-left: 1.5%;
+  margin-left: 1.35%;
 }
 
 #prayer-intentions .leaves-down{
@@ -332,7 +332,7 @@ h2.section-title{
 }
 
 #node.articles #page-header{
-  background-image: url('../images/bg-single-news.png');
+  background-image: url('../images/bg-news.png');
 }
 
 
@@ -377,18 +377,13 @@ h2.section-title{
 /* PAGE HEADER */
 #page-header{
   background-image: url('../images/bg-node-header.png');
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 120px 0 40px 0;
   text-align: center;
   transition-duration: .2s;
 }
-#page-header:hover{
-  background-size: 110% 110%;
-  transition-duration: .2s;
-}
-
 ul.breadcrumbs.white,
 ul.breadcrumbs.white li{
   margin: 0;
@@ -407,16 +402,16 @@ ul.breadcrumbs.white li{
   opacity: .7;
 }
 ul.breadcrumbs.white li:last-child{
-  font-weight: 300;
+  font-weight: 400;
   opacity: 1;
 }
 
 .headline h1{
   margin: auto;
   color: #fff;
-  font-weight: 100;
+  font-weight: 600;
 
-  font-size: 3em;
+  font-size: 2.15em;
   text-transform: uppercase;
 }
 
@@ -426,7 +421,7 @@ ul.breadcrumbs.white li:last-child{
 }
 .headline .icon{
   display: inline-block;
-  width: 35px;
+  width: 28px;
   vertical-align: middle;
   margin:0 5px;
 }
@@ -469,10 +464,9 @@ ul.breadcrumbs.white li:last-child{
 
 /* MEDIA */
 #media h2{
-  font-weight: 700;
+  font-weight: 600;
   color: #333;
   margin-bottom: 20px;
-  font-size: 2.25em;
   text-align: left;
 }
 #media .col-4:hover h2{
@@ -507,17 +501,20 @@ ul.breadcrumbs.white li:last-child{
   margin: -250px 0 0 0;
 }
 #node h1{
-  font-weight:400;
+  font-weight:600;
   text-align: center;
   font-size: 2.25em;
-  text-transform:  uppercase;
+  text-transform:  none;
+
+  font-family: 'Open Sans';
 }
+#node.post h1{ font-size: 1.85em; }
 #node .breadcrumbs{
   margin-bottom: 10px;
 }
 
 #content-box .headline{
-  margin:0 0 10px 0;
+  margin:0 0 15px 0;
 }
 #content-box{
   background-color: #fff;
@@ -596,7 +593,7 @@ ul.breadcrumbs.white li:last-child{
   border: none;
 }
 .music td.chords{
-  font-weight: 700;
+  font-weight: 600;
   color: #3D6E13;
 }
 .music tbody{

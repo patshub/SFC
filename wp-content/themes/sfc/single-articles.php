@@ -1,35 +1,47 @@
+
+
 <?php include 'header.php'; ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div id="node" class="articles">
+<div id="node" class="post">
   <section id="page-header">
     <div class="container">
-      <div class="headline">
-        <ul class="breadcrumbs">
-          <li><a href="/sfc">HOME</a></li>
-          <li><a href="/sfc/articles">LATEST ARTICLES</a></li>
-          <li><?php the_title(); ?></li>
-        </ul>
-        <h1><?php the_title(); ?></h1>
-        <div class="meta">
-          <div class="post-date">
-            <?php the_date(); ?>
-          </div>
-          <div class="post-category">
-            <?php the_category(); ?>
-          </div>
-          <div class="post-comments">
-            <?php comments_number( 'No Comments', 'One Comments', '% Comments' ); ?>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="col-8 push-up">
+        <div class="col">
+          <ul class="breadcrumbs white">
+            <li><a href="/sfc">HOME</a></li>
+            <li><?php the_title(); ?></li>
+          </ul>
+          <div id="content-box">
+            <div class="headline">
+              <h1><?php the_title(); ?></h1>
+              <div class="meta">
+                <div class="post-date">
+                  <?php the_date(); ?>
+                </div>
+                <div class="post-category">
+                  <?php the_category(); ?>
+                </div>
+                <div class="post-comments">
+                  <?php comments_number( 'No Comments', 'One Comments', '% Comments' ); ?>
+                </div>
+              </div>
+            </div>
+            <?php if ( has_post_thumbnail() ) : ?>
+              <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"/>
+            <?php endif; ?>
+            <?php the_content(); ?>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <section id="main-content">
-    <div class="content-box">
-      <?php if ( has_post_thumbnail() ) : ?>
-        <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"/>
-      <?php endif; ?>
-      <?php the_content(); ?>
+      <div id="sidebar" class="col-4">
+        <div class="col">
+
+        </div>
+      </div>
     </div>
   </section>
 </div>
