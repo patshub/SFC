@@ -15,44 +15,36 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/src/css/swipebox.css">
     <script src="<?php bloginfo('template_url'); ?>/assets/js/script.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/lib/jquery-2.1.0.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/src/js/jquery.swipebox.js"></script>
-    <script type="text/javascript">
-    ;( function( $ ) {
-
-	$( '.swipebox' ).swipebox();
-
-} )( jQuery );
-</script>
 </head>
-    <body>
-      <header>
-        <script>
-          $( document ).ready(function() {
-            $('ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>');
-          });
-        </script>
-        <div class="container">
-          <a href="/sfc"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg"/></a>
-          <!-- Site Menu -->
-          <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container' => false ) ); ?>
-          <!-- <ul class="menu">
-            <li><a href="#"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">CLP PROGRAM</a></li>
-            <li><a href="#">ANCOP</a></li>
-            <li><a href="#">GIFT OF LIFE</a></li>
-            <li><a href="#">MEDIA</a></li>
 
-          </ul> -->
-        </div>
-      </header>
+<script>
+  $( document ).ready(function() {
+    $('ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>');
+  });
+</script>
 
-      <!-- <div class="spacer"></div> -->
+<body>
+  <header>
+    <div class="container">
+      <a href="/sfc"><img class="logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo.svg"/></a>
+
+      <?php wp_nav_menu( array( 'theme_location' => 'main-menu','container' => false ) ); ?>
+      <!-- <ul class="menu">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">CLP Program</a></li>
+        <li><a href="#">ANCOP</a></li>
+        <li><a href="#">Gift of Life</a></li>
+        <li><a href="#">Media</a></li>
+      </ul> -->
+      <div class="clear"></div>
+    </div>
+  </header>

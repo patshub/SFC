@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 76">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #619831;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 35px;
+        font-family: FontAwesome5FreeSolid, "Font Awesome 5 Free";
+      }
+    </style>
+  </defs>
+  <g id="Group_582" data-name="Group 582" transform="translate(-722 -572)">
+    <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-1" cx="38" cy="38" r="38" transform="translate(722 572)"/>
+    <text id="_" data-name="" class="cls-2" transform="translate(760 624)"><tspan x="-17.5" y="0"></tspan></text>
+  </g>
+</svg>

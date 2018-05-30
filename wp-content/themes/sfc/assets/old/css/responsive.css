@@ -1,0 +1,14 @@
+@media only screen and (max-width: 1150px) {
+  .container{ width: 85%; }
+}
+
+@media only screen and (max-width: 768px) {
+  [class*='col-']{ width: 100%!important; }
+  .col{ padding: 1.15em 0; }
+}
+
+@media only screen and (max-width: 500px) {
+  body{
+    font-size: 14px;
+  }
+}

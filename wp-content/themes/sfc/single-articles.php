@@ -1,50 +1,30 @@
-
-
 <?php include 'header.php'; ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<div id="node" class="post">
-  <section id="page-header">
-    <div class="container">
-    </div>
-  </section>
-  <section>
-    <div class="container">
-      <div class="col-8 push-up">
-        <div class="col">
-          <ul class="breadcrumbs white">
-            <li><a href="/sfc">HOME</a></li>
-            <li><?php the_title(); ?></li>
-          </ul>
-          <div id="content-box">
-            <div class="headline">
-              <h1><?php the_title(); ?></h1>
-              <div class="meta">
-                <div class="post-date">
-                  <?php the_date(); ?>
-                </div>
-                <div class="post-category">
-                  <?php the_category(); ?>
-                </div>
-                <div class="post-comments">
-                  <?php comments_number( 'No Comments', 'One Comments', '% Comments' ); ?>
-                </div>
-              </div>
-            </div>
-            <?php if ( has_post_thumbnail() ) : ?>
-              <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>"/>
-            <?php endif; ?>
-            <?php the_content(); ?>
-          </div>
-        </div>
-      </div>
-      <div id="sidebar" class="col-4">
-        <div class="col">
-
-        </div>
-      </div>
-    </div>
-  </section>
+<div id="page-header" class="node">
 </div>
+
+<section>
+  <div class="container">
+    <div class="node-content">
+      <div class="headline">
+        <ul class="breadcrumbs">
+          <li><a href="#">Home</a></li>
+          <li><a href="/sfc/articles">Latest Articles</a></li>
+          <li><?php the_title(); ?></li>
+        </ul>
+        <h1><?php the_title(); ?></h1>
+        <span class="post-date excerpt"><?php the_date(); ?></span>
+      </div>
+
+      <div class="node-body">
+        <div class="node-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"></div>
+        <?php the_content(); ?>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="clear"></div>
 <?php endwhile; else: ?>
 <p>Sorry, no posts matched your criteria.</p>
 <?php endif; ?>

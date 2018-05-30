@@ -33,7 +33,7 @@ add_action( 'init', 'revcon_change_post_object' );
 function articles_post_type()
 {
     $labels = array(
-        'name' => 'Articles',
+        'name' => 'Latest Articles',
         'singluar' => 'Article',
         'add_new' => 'Add Article',
         'all_items' => 'All Articles',

@@ -1,205 +1,214 @@
 <?php include 'header.php'; ?>
   <?php //if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
-    <section id="home-header">
-        <div class="container">
-          <div class="headline">
-            <!-- <h2>OUR MISSION IS TO BRING EVERYBODY CLOSER TO <span style="font-weight:600;font-size:1.15em;">CHRIST</span></h2> -->
-            <img class="main-logo" src="<?php bloginfo('template_url'); ?>/assets/images/logo-white.svg"/>
-            <p>Singles for Christ is the next generation of Couples for Christ, empowered by the Holy Spirit to journey and witness with single men and women in their discovery and pursuit of vocations and the fullness of the mission towards building a Christ-centered society.</p>
-            <a class="btn">LEARN MORE</a>
+
+  <section id="home-banner">
+    <div class="container">
+      <div class="col-1">
+      </div>
+      <div class="col-10 headline">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-white-cross.svg"/>
+        <h1>Singles for Christ</h1>
+        <p>Every single man and woman all over the world experiencing Christ.</p>
+        <a class="btn hover-white" href="#">Learn More</a>
+      </div>
+      <div class="col-1">
+        <!-- <ul class="banner-menu">
+          <li><a href="#">Latest Articles</a></li>
+          <li><a href="#">Upcoming Events</a></li>
+          <li><a href="#">Media</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Make a Prayer Intention</a></li>
+        </ul> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="featured-triplets">
+    <div class="container">
+      <div class="columns">
+        <div class="col-4">
+          <div class="col">
+            <a href="#"><div class="img"></div></a>
+            <div class="info">
+              <h3>About SFC</h3>
+              <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
+              <a href="/sfc/about-us" class="btn">Learn More</a>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- <div id="search">
-        <div class="container">
-          <form>
-            <h3>WHAT ARE YOU SEARCHING FOR?</h3>
-            <div class="field-group">
-              <input type="text" placeholder="ENTER KEYWORDS" />
-              <input type="submit" value="Search"/>
+        <div class="col-4">
+          <div class="col">
+            <a href="#"><div class="img"></div></a>
+            <div class="info">
+              <h3>How to Join</h3>
+              <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
+              <a href="/sfc/clp" class="btn">Learn More</a>
             </div>
-          </form>
+          </div>
         </div>
-      </div> -->
-      <div id="featured-btns">
-        <div class="container">
-          <div class="wrap">
-            <div class="col-1"></div>
-            <div class="col-2">
-              <div class="col">
-                <a href="/sfc/articles">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-news.svg"/>
-                  <h3>Articles</h3>
-                </a>
-              </div>
+        <div class="col-4">
+          <div class="col">
+            <a href="#"><div class="img"></div></a>
+            <div class="info">
+              <h3>What to Expect</h3>
+              <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
+              <a href="#" class="btn">Learn More</a>
             </div>
-            <div class="col-2">
-              <div class="col">
-                <a href="#">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-events.svg"/>
-                  <h3>Events</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="col">
-                <a href="#">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-search-light.svg"/>
-                  <h3>Search</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="col">
-                <a href="#">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-media.svg"/>
-                  <h3>Media</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-2">
-              <div class="col">
-                <a href="#">
-                  <img src="<?php bloginfo('template_url'); ?>/assets/images/icon-contact.svg"/>
-                  <h3>Contact</h3>
-                </a>
-              </div>
-            </div>
-            <div class="col-1"></div>
           </div>
         </div>
       </div>
-      <section id="what-we-do">
-        <div class="container">
-          <h2 class="section-title">WHAT WE DO</h2>
-          <div>
-            <div class="col-3">
-              <div class="col">
-                <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/placeholders/1.png');"></div>
-                <h3>HOUSEHOLDS</h3>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="col">
-                <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/placeholders/2.png');"></div>
-                <h3>PRAISE & WORSHIP</h3>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="col">
-                <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/placeholders/3.png');"></div>
-                <h3>RETREATS</h3>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-              </div>
-            </div>
-            <div class="col-3">
-              <div class="col">
-                <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/placeholders/4.png');"></div>
-                <h3>CONFERENCES</h3>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-              </div>
+    </div>
+  </section>
+
+  <!-- <section id="featured-btns">
+    <div class="container">
+      <div class="col-3">
+      </div>
+      <div class="col-2">
+        <div class="col">
+          <a href="#" class="featured-btn">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-about-sfc.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="col">
+          <a href="#" class="featured-btn">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-how-to-join.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-2">
+        <div class="col">
+          <a href="#" class="featured-btn">
+            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-what-to-expect.png"/>
+          </a>
+        </div>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+  </section> -->
+
+  <section id="featured-contents">
+    <div class="container">
+      <div class="headline">
+        <h2 class="section-title no-margin">
+          <span class="subtitle">What We Do</span>
+          Deepen Your Relationship With God</h2>
+        <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
+      </div>
+      <div class="columns">
+        <div class="col-3">
+          <div class="col">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Households</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
-      </section>
-
-
-      <section id="our-programs">
-        <div class="container">
-          <h2 class="section-title">OUR PROGRAMS</h2>
-          <div>
-            <div class="col-4">
-              <div class="col">
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-sfc.svg"/></a>
-                <a href="#"><h3>CHRISTIAN LIFE PROGRAM</h3></a>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-                <a href="#" class="btn">LEARN MORE</a>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="col">
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-ancop.svg"/></a>
-                <a href="#"><h3>ANSWERING THE CRIES OF THE POOR</h3></a>
-                <span class="excerpt"><p>ANCOP is a Christian, Catholic non-profit organization that dedicates itself to proclaiming CHRIST, and the Christian faith, by uplifting the plight of the poor.</p></span>
-                <a href="#" class="btn">LEARN MORE</a>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="col">
-                <a href="#"><img src="<?php bloginfo('template_url'); ?>/assets/images/icon-gift.svg"/></a>
-                <a href="#"><h3>GIFT OF LIFE</h3></a>
-                <span class="excerpt"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p></span>
-                <a href="#" class="btn">LEARN MORE</a>
-              </div>
+        <div class="col-3">
+          <div class="col">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Households</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section id="verse-of-the-day">
-        <div class="container">
-
-        </div>
-      </section>
-
-      <section id="prayer-intentions">
-        <img class="leaves-down" src="<?php bloginfo('template_url'); ?>/assets/images/leaves-down.png"/>
-        <div class="container">
-          <div class="col-5">
-            <h3 class="section-title">PRAYER INTENTIONS</h3>
-            <p>
-              “<strong>Let us sign ourselves</strong>. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis feugiat est. Donec facilisis eget nibh nec lacinia. Phasellus vulputate.”
-            </p>
-            <form>
-              <textarea placeholder="Enter Your Prayer Intentions"></textarea>
-              <div class="field-group two">
-                <input type="text" placeholder="Enter your Name" />
-                <input type="text" placeholder="Enter your Email" />
-              </div>
-              <!-- <p><strong>Your privacy is important to us.</strong><br/>
-              Feel free to share your prayers, or keep it private.</p> -->
-
-              <input type="submit" value="SUBMIT PRAYER"/>
-            </form>
+        <div class="col-3">
+          <div class="col">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Households</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+            </div>
           </div>
-          <!-- <div class="col-7">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/img-prayer.png"/>
-          </div> -->
         </div>
-      </section>
+        <div class="col-3">
+          <div class="col">
+            <div class="img"></div>
+            <div class="info">
+              <h4>Households</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="clp-home">
+    <div class="container">
+      <div class="col-3">
+      </div>
+      <div class="col-6">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-black-cross.svg"/>
+        <h2 class="section-title align-center"><span class="subtitle">Join Us</span>Christian Life Program</h2>
+        <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
+        <a href="/sfc/clp" class="btn">Learn More</a>
+      </div>
+      <div class="col-3">
+      </div>
+    </div>
+  </section>
 
-      <section id="news">
-        <div class="container">
-          <h2 class="section-title">LATEST ARTICLES</h2>
-          <?php
-          $args = array(
-            'posts_per_page' => 9,
-            'post_type'   => 'articles'
-          );
-          $articles = new WP_Query( $args );
-          if ( $articles->have_posts() ) { ?>
-          <div id="columns">
-            <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
-            <div class="col-3">
-              <div class="col">
+  <section>
+    <div class="container" id="ancop-home">
+      <div class="col-6">
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <h2 class="section-title no-margin"><span class="subtitle">Help Us Help Others</span>Answering the Cry of the Poor</h2>
+          <p>ANCOP is an acronym which stands for Answering the Cry of the Poor. ANCOP USA shares Christ’s love among the poor, uplifts their lives, restores their dignity as children of God, and transforms communities.</p>
+          <a href="/sfc/ancop" class="btn">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prayers-home" class="bg">
+    <div class="container">
+      <div class="mid-col">
+        <h2 class="section-title no-margin"><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
+        <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
+        <a href="/sfc/prayers" class="btn white hover-white">Make a Prayer Intention</a>
+      </div>
+    </div>
+    <div class="dimmer"></div>
+  </section>
+
+  <section id="articles-home" class="bg grey">
+    <div class="container">
+      <h2 class="section-title"><strong>Latest Articles</strong></h2>
+      <?php
+      $args = array(
+        'posts_per_page' => 6,
+        'post_type'   => 'articles'
+      );
+      $articles = new WP_Query( $args );
+      if ( $articles->have_posts() ) { ?>
+        <div class="columns articles">
+          <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
+          <div class="col-6">
+            <div class="col">
+              <div class="article-item">
                 <?php if ( has_post_thumbnail() ) : ?>
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><div class="img" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"></div></a>
+                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><div class="article-img" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');"></div></a>
                 <?php endif; ?>
-
-                <div class="info">
-                  <a href="#"><h3><?php the_title(); ?></h3></a>
-                  <p class="meta"><?php the_date(); ?></p>
-                  <span class="excerpt"><?php echo the_excerpt(25); ?></span>
-                  <a href="<?php the_permalink(); ?>" class="btn">READ MORE</a>
+                <div class="article-info">
+                  <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
+                  <span class="post-date excerpt"><?php echo get_the_date('F j, Y'); ?></span>
+                  <div class="excerpt"><?php echo the_excerpt(25); ?></div>
+                  <a href="<?php the_permalink(); ?>" class="btn secondary">Read Article</a>
                 </div>
               </div>
             </div>
-            <?php } wp_reset_postdata(); ?>
           </div>
-          <?php } else { // no posts found
-          } ?>
+          <?php } wp_reset_postdata(); ?>
         </div>
-      </section>
+      <?php } else { // no posts found
+      } ?>
+    </div>
+  </section>
 <?php include 'footer.php'; ?>

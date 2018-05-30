@@ -1,0 +1,17 @@
+<svg id="Group_646" data-name="Group 646" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.946 35.946">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.35;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 17px;
+        font-family: FontAwesome5FreeSolid, "Font Awesome 5 Free";
+      }
+    </style>
+  </defs>
+  <ellipse id="Ellipse_13" data-name="Ellipse 13" class="cls-1" cx="17.973" cy="17.973" rx="17.973" ry="17.973" transform="translate(0 0)"/>
+  <text id="_" data-name="" class="cls-2" transform="translate(18.197 24.091)"><tspan x="-7.438" y="0"></tspan></text>
+</svg>

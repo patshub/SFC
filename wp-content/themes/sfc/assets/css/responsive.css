@@ -1,14 +1,95 @@
 @media only screen and (max-width: 1150px) {
   .container{ width: 85%; }
+
+  header .logo{
+    width: 220px;
+    top:20px;
+  }
+
+  ul.menu li{
+    font-size: .85em;
+  }
+}
+@media only screen and (max-width: 960px) {
+  header .logo{
+    width: 350px;
+    display: block;
+    margin: auto;
+  }
+  ul.menu{
+    display: table;
+    margin: 25px auto 0 auto;
+    float: none;
+  }
+  ul.menu li{
+    font-size: 1em;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
-  [class*='col-']{ width: 100%!important; }
-  .col{ padding: 1.15em 0; }
+  [class*='col-']{ width: 100%!important; display: block; margin:0;}
+  .col,
+  .col-3:nth-child(4n-2) .col,
+  .col-3:nth-child(4n-1) .col,
+  .col-3:nth-child(4n) .col,
+  .col-3:nth-child(4n-3) .col
+  { padding: 0 0 2.35em 0!important; }
+
+  [class*='col-']:last-child .col{
+    padding-bottom: 0!important;
+  }
+  .faq-section .col{
+    padding:0!important;
+  }
+  .mid-col{
+    width: 90%;
+  }
+  #ancop-home{
+    background-image: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   body{
     font-size: 14px;
+  }
+  #page-header h1{
+    font-size: 2.25em;
+  }
+  #page-header.special h1{
+    font-size: 2.75em;
+  }
+  .bg{
+    padding: 30px 0;
+  }
+  .columns .info{
+    margin:15px 0 0 0;
+  }
+
+  .filter{
+    margin:10px 0;
+  }
+
+  .articles .col{
+    padding-bottom: 25px!important;
+  }
+
+  .article-info{
+    width: 63%;
+  }
+  .article-img{
+    height: 85px;
+  }
+
+  #page-header.node{
+    height: 50px;
+  }
+  .node-content{
+    margin: 0;
+    padding: 30px 0 0 0;
+
+    box-shadow: none;
+    width: 100%;
   }
 }
