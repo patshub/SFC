@@ -2,7 +2,6 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #006da0;
         font-size: 18px;
         font-family: FontAwesome5FreeSolid, "Font Awesome 5 Free";
       }

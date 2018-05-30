@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   $('#featured-btns .featured-btn').css('height',$('#featured-btns .featured-btn').width());
 
+  // Faq Item Dropdown
   $('.faq-item').click(function(){
     if($(this).hasClass('open')){
       $(this).children('p').slideToggle('fast');
@@ -12,6 +13,7 @@ $( document ).ready(function() {
     }
   });
 
+  // Prayer Items Dropdown
   $('.prayer-item').click(function(){
     if($(this).hasClass('open')){
       $(this).animate({'height':'80px'});
@@ -25,6 +27,12 @@ $( document ).ready(function() {
     }
   });
 
+  // Prayer Intentions Form - ADDED Privacy Label
+  $('.usp-category label').html('<p><strong>We respect your privacy.</strong><br/>Please let us know if you would like your prayer intentions to be Private or Public.</p>');
+  $('select#user-submitted-category option').first().text('Your Privacy');
+
+  // Direct Browser to the form after Submission
+  $('#prayer-form #usp_form').attr('action','#prayer-form');
 
 });
 $( window ).resize(function() {

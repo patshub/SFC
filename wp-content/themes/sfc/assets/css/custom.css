@@ -8,8 +8,7 @@
   height: 250px;
 }
 h2.section-title{
-  font-size:2em;
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
 }
 .subtitle{
   display: block;
@@ -131,7 +130,7 @@ ul.menu li:first-child{
   vertical-align: top;
 }
 ul.menu li a{
-  color: #333;
+  color: #000;
   display: block;
 }
 ul.menu img.icon-home{
@@ -291,6 +290,7 @@ ul.menu img.icon-home{
 }
 #featured-contents p{
   opacity: .85;
+  margin:.75em 0;
 }
 #featured-contents a.btn{
   margin: auto;
@@ -342,6 +342,9 @@ ul.menu img.icon-home{
 #ancop-home .col-6 .col{
   padding-top: 35px;
 }
+#ancop-home p{
+  margin:.75em 0;
+}
 
 /* Home Prayer Intentions */
 #prayers-home .subtitle{
@@ -388,11 +391,6 @@ ul.menu img.icon-home{
 .articles a h4{
   color: #000;
 }
-
-#articles-home h2{
-  margin-bottom: 20px;
-}
-
 
 /* Page Headers */
 #page-header{
@@ -441,7 +439,6 @@ ul.menu img.icon-home{
 #page-header .icon:before{
   font-family: FontAwesome;
   content: " ";
-  color: rgba(255,255,255,0.35);
   margin-right: 10px;
   font-size: .85em;
 }
@@ -478,7 +475,7 @@ ul.menu img.icon-home{
   background-image: url('../images/bg-motherandchild.png')!important;
 }
 .dimmer{
-  background-color: rgba(0,0,0,0.45);
+  background-color: rgba(0,0,0,0.35);
   width: 100%;
   height: 10000px;
 
@@ -711,6 +708,9 @@ ul.menu img.icon-home{
 #prayer-form label{
   display: none;
 }
+#prayer-form .usp-category label{
+  display: block;
+}
 #prayer-form input,
 #prayer-form textarea,
 #prayer-form select{
@@ -724,16 +724,12 @@ ul.menu img.icon-home{
   background-color: #0095da!important;
 }
 
-
 /* Footer */
 footer{
   background-color: #0095da;
   padding: 45px 0;
   position: relative;
   color: #fff;
-}
-footer .verse-of-the-day p{
-  opacity: 1;
 }
 footer .logo{
   width: 300px;
@@ -756,23 +752,38 @@ footer .col{
 footer h3{
   margin-bottom: 5px;
 }
-footer a p{
+footer p,
+footer li a,
+.bibleText{
   opacity: .75!important;
   color: #fff!important;
   transition-duration: .2s;
+  font-weight: 400;
 }
-footer a p:hover{
+footer p:hover,
+footer li a:hover{
   opacity: 1!important;
   text-decoration: underline;
   transition-duration: .2s;
 }
-
+footer ul.menu{
+  width: 100%;
+  padding: 0;
+}
+footer ul.menu li{
+  display: block;
+}
 
 footer .social-media img{
   width: 40px;
   display: inline-block;
   margin-right: 5px;
 }
+
+footer .bibleVerse a{
+  color: #fff;
+}
+
 #bottom-footer{
   padding:5px 0;
   background-color: #006DA0;
@@ -814,10 +825,17 @@ footer .social-media img{
   position: relative;
 }
 /* Register Fields */
+#register-clp .your-name{
+  display: none;
+}
+#register-clp .your-subject{
+  width: 100%;
+  display: block;
+}
 #register-clp .first-name,
 #register-clp .last-name,
 #register-clp .phone,
-#register-clp .email,
+#register-clp .your-email,
 #register-clp .City{
   width: 50%;
 
@@ -836,10 +854,9 @@ footer .social-media img{
 }
 
 /* Form Errors */
-.screen-reader-response{
-  display: none;
-}
-.wpcf7-not-valid-tip{
+.screen-reader-response,
+.wpcf7-not-valid-tip,
+#usp-error-message{
   display: none;
 }
 
@@ -850,7 +867,101 @@ footer .social-media img{
   background-color: #BF3030;
   padding:10px;
 }
-.wpcf7-mail-sent-ok{
+.wpcf7-mail-sent-ok,
+#usp-success-message{
   background-color: #46BF30;
   padding:10px;
+}
+
+
+/* Media */
+#photo-albums .col{
+  padding-bottom: 0;
+}
+#photo-albums .img{
+  overflow: hidden;
+  display: block;
+  height:260px;
+}
+#photo-albums .info{
+  padding: 15px 15px 25px 15px;
+  box-sizing: border-box;
+
+  background-color: rgba(0,0,0,0.5);
+
+  position: absolute;
+  bottom: -10px;
+
+  width: 100%;
+
+  display: block;
+}
+
+#photo-albums .info h4{
+  color: #fff!important;
+}
+#photo-albums .info .excerpt{
+  color: #fff;
+  opacity: .75;
+}
+#photo-albums .info a.btn{
+  color: #fff;
+  margin:0;
+  float: right;
+  display: inline-block;
+}
+
+#video-playlist .article-info{
+  margin-left: 3%;
+}
+
+#video-playlist .bx-viewport{
+  width: 60%!important;
+  display: inline-block;
+}
+
+.bx-wrapper{
+  box-shadow: none!important;
+  border: none!important;
+  background: transparent!important;
+  margin:0!important;
+}
+.bx-controls{
+  width: 35%!important;
+  display: inline-block;
+  vertical-align: top;
+}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+  position: relative!important;
+  text-align: left!important;
+  padding:15px!important;
+  bottom:0!important;
+
+}
+.bx-wrapper .bx-pager-item{
+  font-size: 1em!important;
+  display: block!important;
+  line-height: 140%!important;
+}
+.pager-item{
+  display: block;
+  font-size: 1.25em;
+  margin: 0 0 15px 10px;
+
+  font-weight: 400;
+
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+
+  color: rgba(0,0,0,0.4);
+}
+.bx-pager-link.active .pager-item{
+  font-weight: 700;
+  color: rgba(0,0,0,0.75);
+}
+.bx-pager-link .pager-item .post-date{
+  margin-top: 5px;
+  display: block;
+  font-weight: 400;
+  font-size: .85em;
 }

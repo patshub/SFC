@@ -67,8 +67,7 @@
 
 <section class="faq-section bg grey">
   <div class="container">
-    <h2>Frequently-Asked Questions</h2>
-    <br/>
+    <h2 class="section-title">Frequently-Asked Questions</h2>
     <div class="col-6">
       <div class="col">
         <div class="faq-item">
@@ -105,7 +104,7 @@
   </div>
 </section>
 
-<section id="register-clp" class="bg lightblue-img">
+<section id="register-clp" class="bg blue-img">
   <div class="container">
     <div class="mid-col">
       <h2>Register</h2>

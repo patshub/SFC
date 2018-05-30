@@ -18,15 +18,20 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
 
+
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/src/css/swipebox.css">
     <script src="<?php bloginfo('template_url'); ?>/assets/js/script.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/lib/jquery-2.1.0.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/swipebox-master/src/js/jquery.swipebox.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <script>
   $( document ).ready(function() {
-    $('ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>');
+    $('header ul.menu').prepend('<li><a href="/sfc"><img class="icon-home" src="<?php bloginfo('template_url'); ?>/assets/images/icon-home.svg"/></a></li>');
   });
 </script>
 

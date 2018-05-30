@@ -15,14 +15,14 @@
 <section id="prayers-list" class="bg white">
   <div class="container">
     <div class="columns">
-      <h2>Prayers Intentions</h2>
-      <br/>
+      <h2 class="section-title">Prayers Intentions</h2>
 
       <div class="col-6">
         <div class="col">
           <?php
           $args = array(
             'posts_per_page' => 4,
+            'category__not_in' => array(13)
           );
           $articles = new WP_Query( $args );
           if ( $articles->have_posts() ) { ?>
@@ -47,7 +47,8 @@
           <?php
           $args = array(
             'posts_per_page' => 4,
-            'offset' => 4
+            'offset' => 4,
+            'category__not_in' => array(13)
           );
           $articles = new WP_Query( $args );
           if ( $articles->have_posts() ) { ?>

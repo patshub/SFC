@@ -1,10 +1,9 @@
 <?php include 'header.php'; ?>
 <?php include 'header-special.php'; ?>
 
-  <section class="bg blue-img">
+  <section class="bg grey">
     <div class="container">
-      <h2 class="align-center"><strong>Featured Articles</strong></h2>
-      <br/>
+      <h2 class="section-title align-center"><strong>Featured Articles</strong></h2>
       <?php
       $args = array(
         'posts_per_page' => 3,
@@ -25,7 +24,7 @@
               <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
               <span class="post-date excerpt"><?php echo get_the_date('F j, Y'); ?></span>
               <div class="excerpt"><?php echo the_excerpt(25); ?></div>
-              <a href="<?php the_permalink(); ?>" class="btn white hover-white">Read Article</a>
+              <a href="<?php the_permalink(); ?>" class="btn">Read Article</a>
             </div>
           </div>
         </div>
@@ -37,26 +36,25 @@
   </section>
 
 
-  <section class="bg white">
+  <section id="search-articles" class="bg white">
     <div class="container">
       <h3><strong>Search for Articles</strong></h3>
-      <form method="get" class="filter">
+      <form action="#search-articles" method="get" class="filter">
         <input type="text" name="search" placeholder="Search Keywords"/>
         <input type="submit" value="Apply" />
       </form>
       <?php
-
       $keyword = "";
-
       if($_GET["search"]){
         $keyword = $_GET["search"];
       }
-
+      $paged = get_query_var( 'paged' );
       $args2 = array(
         'posts_per_page' => 6,
         'post_type'   => 'articles',
         's' => $keyword,
-        'category__not_in' => array(8)
+        'category__not_in' => array(8),
+        'paged' => $paged
 
       );
       $articles2 = new WP_Query( $args2 );
@@ -81,9 +79,22 @@
         </div>
         <?php } wp_reset_postdata(); ?>
       </div>
-    <?php } else { // no posts found
+    <?php
+    echo paginate_links(array(
+      'total' => $articles2->max_num_pages
+    ));
+    } else { // no posts found
     } ?>
     </div>
   </section>
+
+  <script>
+    // Anchor page down to the search articles section whenever pager is used
+    $( document ).ready(function() {
+      $('a.page-numbers').each(function() {
+        $(this).attr('href', $(this).attr('href').slice(0,-1) + '#search-articles');
+      });
+    });
+  </script>
 
 <?php include 'footer.php'; ?>

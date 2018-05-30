@@ -64,7 +64,7 @@
   <section id="featured-contents">
     <div class="container">
       <div class="headline">
-        <h2 class="section-title no-margin">
+        <h2 class=" no-margin">
           <span class="subtitle">What We Do</span>
           Deepen Your Relationship With God</h2>
         <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
@@ -111,15 +111,11 @@
   </section>
   <section id="clp-home">
     <div class="container">
-      <div class="col-3">
-      </div>
-      <div class="col-6">
+      <div class="mid-col">
         <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-black-cross.svg"/>
-        <h2 class="section-title align-center"><span class="subtitle">Join Us</span>Christian Life Program</h2>
+        <h2 class=" align-center"><span class="subtitle">JOIN US</span>Christian Life Program</h2>
         <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
         <a href="/sfc/clp" class="btn">Learn More</a>
-      </div>
-      <div class="col-3">
       </div>
     </div>
   </section>
@@ -130,7 +126,7 @@
       </div>
       <div class="col-6">
         <div class="col">
-          <h2 class="section-title no-margin"><span class="subtitle">Help Us Help Others</span>Answering the Cry of the Poor</h2>
+          <h2 class=" no-margin"><span class="subtitle">HELP THE POOR</span>Answering the Cry of the Poor</h2>
           <p>ANCOP is an acronym which stands for Answering the Cry of the Poor. ANCOP USA shares Christ’s love among the poor, uplifts their lives, restores their dignity as children of God, and transforms communities.</p>
           <a href="/sfc/ancop" class="btn">Learn More</a>
         </div>
@@ -141,7 +137,7 @@
   <section id="prayers-home" class="bg">
     <div class="container">
       <div class="mid-col">
-        <h2 class="section-title no-margin"><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
+        <h2 class=" no-margin"><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
         <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
         <a href="/sfc/prayers" class="btn white hover-white">Make a Prayer Intention</a>
       </div>

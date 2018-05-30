@@ -570,3 +570,475 @@ Failed nonce verification
 File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
 Failed nonce verification
 
+========== 05/30/2018 6:32:16 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 6:33:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 6:34:29 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:15:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:15:48 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:17:25 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:17:48 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:18:04 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:18:15 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:18:15 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:18:15 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:21:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:21:20 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:22:06 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:22:20 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:22:20 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:25:37 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:25:37 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:25:39 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:25:40 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:27:53 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:27:53 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:28:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:28:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:28:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:28:01 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:32:35 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:32:53 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:33:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:33:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:34:05 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:34:16 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:34:25 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:34:25 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:39:48 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:39:48 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:40:03 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:40:03 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:40:34 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:40:34 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:40:54 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 7:52:21 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:23:41 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:23:52 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 99
+Not saving song box because this is a post revision
+
+========== 05/30/2018 8:24:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:24:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:29:44 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:42:17 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 8:42:22 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 99
+Not saving song box because this is a post revision
+
+========== 05/30/2018 8:42:26 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:25:04 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:25:11 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:33:13 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:33:13 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:33:13 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:33:23 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:46:37 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:46:37 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:46:37 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:47:41 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:47:54 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:47:59 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:04 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:20 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:27 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:27 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:34 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:48:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:49:10 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:49:24 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:50:24 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:51:54 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:55:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:55:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:55:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:55:58 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:57:39 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 9:58:03 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:15:15 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:16:24 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:18:59 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:20:22 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:20:22 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:22:50 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:22:50 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:24:26 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:25:03 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:25:47 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:25:59 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:25:59 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:28:40 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:28:40 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:28:56 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:28:56 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:29:50 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:29:50 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:32:22 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:33:16 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:33:16 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:37:14 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:37:14 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:37:53 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:37:53 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:13 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:13 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:24 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:24 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:33 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:33 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:39 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:38:39 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:43:49 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:44:45 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:46:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:46:51 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:47:09 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 05/30/2018 10:47:18 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
