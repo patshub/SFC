@@ -9,7 +9,7 @@
         <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-white-cross.svg"/>
         <h1>Singles for Christ</h1>
         <p>Every single man and woman all over the world experiencing Christ.</p>
-        <a class="btn hover-white" href="#">Learn More</a>
+        <a class="btn hover-white" href="/sfc/about-us">Learn More</a>
       </div>
       <div class="col-1">
         <!-- <ul class="banner-menu">
@@ -21,6 +21,7 @@
         </ul> -->
       </div>
     </div>
+    <div class="dimmer"></div>
   </section>
 
   <section id="featured-triplets">
@@ -28,7 +29,7 @@
       <div class="columns">
         <div class="col-4">
           <div class="col">
-            <a href="#"><div class="img"></div></a>
+            <a href="/sfc/about-us"><div class="img"></div></a>
             <div class="info">
               <h3>About SFC</h3>
               <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
@@ -38,7 +39,7 @@
         </div>
         <div class="col-4">
           <div class="col">
-            <a href="#"><div class="img"></div></a>
+            <a href="/sfc/clp"><div class="img"></div></a>
             <div class="info">
               <h3>How to Join</h3>
               <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
@@ -48,47 +49,17 @@
         </div>
         <div class="col-4">
           <div class="col">
-            <a href="#"><div class="img"></div></a>
+            <a href="/sfc/"><div class="img"></div></a>
             <div class="info">
               <h3>What to Expect</h3>
               <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
-              <a href="#" class="btn">Learn More</a>
+              <a href="/sfc/" class="btn">Learn More</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- <section id="featured-btns">
-    <div class="container">
-      <div class="col-3">
-      </div>
-      <div class="col-2">
-        <div class="col">
-          <a href="#" class="featured-btn">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-about-sfc.png"/>
-          </a>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="col">
-          <a href="#" class="featured-btn">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-how-to-join.png"/>
-          </a>
-        </div>
-      </div>
-      <div class="col-2">
-        <div class="col">
-          <a href="#" class="featured-btn">
-            <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-what-to-expect.png"/>
-          </a>
-        </div>
-      </div>
-      <div class="col-3">
-      </div>
-    </div>
-  </section> -->
 
   <section id="featured-contents">
     <div class="container">

@@ -43,7 +43,7 @@
           <div class="col">
             <a href="#"><div class="img"></div></a>
             <div class="info">
-              <h3>ANCOP USA Walk</h3>
+              <h3>Education</h3>
               <p>It is faith in action! Kids, youth, adults, and seniors join together to walk for the poor and rally the public to support the cause.</p>
               <a href="#" class="btn">Learn More</a>
             </div>
@@ -53,7 +53,7 @@
           <div class="col">
             <a href="#"><div class="img"></div></a>
             <div class="info">
-              <h3>Sponsor a Child</h3>
+              <h3>Community Development</h3>
               <p>Bring back the smiles in children’s faces by letting them know that there is someone who loves and cares for them.</p>
               <a href="#" class="btn">Learn More</a>
             </div>
@@ -63,7 +63,7 @@
           <div class="col">
             <a href="#"><div class="img"></div></a>
             <div class="info">
-              <h3>Make a Donation</h3>
+              <h3>Calamity/Disaster Response</h3>
               <p>You can help transform lives. All of our program funding relies entirely on donations. We’re thankful for your support.</p>
               <a href="#" class="btn">Donate</a>
             </div>
@@ -78,7 +78,7 @@
       <div class="mid-col">
         <h2>Visit their Website</h2>
         <p>For more information about ANCOP, visit their website.</p>
-        <a href="#" class="btn white">ancop.com</a>
+        <a href="http://cfcancop.org/" target="_blank" class="btn white hover-white">cfcancop.org</a>
       </div>
     </div>
   </section>

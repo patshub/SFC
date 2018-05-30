@@ -7,7 +7,7 @@
       <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-prayerwarriors.svg" />
       <h2>Prayer Warriors, Assemble!</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <a class="btn white hover-white" href="#">Make a Prayer Intention</a>
+      <a class="btn white hover-white" href="#prayer-form">Make a Prayer Intention</a>
     </div>
   </div>
 </section>

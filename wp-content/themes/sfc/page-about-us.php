@@ -71,7 +71,7 @@
       <div class="col">
         <h2 class="section-title"><span class="subtitle">Join Us</span>Christian Life Program</h2>
         <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
-        <a href="#" class="btn white hover-white inline">Register</a> <a href="#" class="btn hover-white inline">Learn More</a>
+        <a href="/sfc/clp#register-clp" class="btn white hover-white inline">Register</a> <a href="/sfc/clp" class="btn hover-white inline">Learn More</a>
       </div>
     </div>
 

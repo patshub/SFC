@@ -180,6 +180,13 @@ ul.menu img.icon-home{
   background-repeat: no-repeat;
   padding: 60px 0;
   margin:0;
+
+  position: relative;
+  overflow: hidden;
+}
+#home-banner .headline{
+  position: relative;
+  z-index: 3;
 }
 #home-banner .headline h1{
   font-size: 4em;
@@ -200,6 +207,9 @@ ul.menu img.icon-home{
   width: 85px;
   margin: auto;
   display: block;
+}
+#home-banner .dimmer{
+  background-color: rgba(0,0,0,0.35);
 }
 
 /* #home-banner ul.banner-menu{
