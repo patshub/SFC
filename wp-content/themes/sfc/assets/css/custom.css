@@ -653,12 +653,65 @@ ul.menu img.icon-home{
 /* Prayer Intentions Page */
 .prayer-item{
   margin:0 0 30px 0;
+  position: relative;
+  display: block;
 }
+.prayer-item{
+  height: 80px;
+  overflow: hidden;
+  display: block;
+
+  transition-duration: .2s;
+}
+.prayer-item h3:after{
+  font-family: FontAwesome;
+  content: "\f107";
+  color: #333;
+  margin-left: 10px;
+  opacity: .15;
+
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.prayer-item.open h3:after{
+  content: "\f106";
+}
+
 .prayer-item p{
-  opacity: .65;
+  opacity: .65!important;
+}
+.white-fade{
+  width:130%;
+  height: 35px;
+  background-color: white;
+  position: absolute;
+  bottom: -30px;
+  -webkit-filter: blur(10px);
+ -moz-filter: blur(10px);
+ -o-filter: blur(10px);
+ -ms-filter: blur(10px);
+ filter: blur(10px);
 }
 #prayer-warriors-asseble a.btn{
   margin: 25px auto 0 auto;
+}
+
+/* Prayer Intention Form */
+#prayer-form label{
+  display: none;
+}
+#prayer-form input,
+#prayer-form textarea,
+#prayer-form select{
+  background-color: #fff!important;
+  border: none;
+  box-shadow: none;
+}
+
+#prayer-form input[type="submit"]{
+  color:#fff;
+  background-color: #0095da!important;
 }
 
 

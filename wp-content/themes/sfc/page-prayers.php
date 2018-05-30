@@ -12,86 +12,78 @@
   </div>
 </section>
 
-<section class="bg white">
+<section id="prayers-list" class="bg white">
   <div class="container">
     <div class="columns">
       <h2>Prayers Intentions</h2>
       <br/>
+
       <div class="col-6">
         <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <?php
+          $args = array(
+            'posts_per_page' => 4,
+          );
+          $articles = new WP_Query( $args );
+          if ( $articles->have_posts() ) { ?>
+          <div class="columns">
+            <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
+
+                <div class="prayer-item">
+                  <h3><?php the_title(); ?></h3>
+                  <?php echo the_content(); ?>
+                  <div class="white-fade"></div>
+                </div>
+
+            <?php } wp_reset_postdata(); ?>
           </div>
+          <?php } else { // no posts found
+          } ?>
         </div>
       </div>
+
       <div class="col-6">
         <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <?php
+          $args = array(
+            'posts_per_page' => 4,
+            'offset' => 4
+          );
+          $articles = new WP_Query( $args );
+          if ( $articles->have_posts() ) { ?>
+          <div class="columns">
+            <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
+
+                <div class="prayer-item">
+                  <h3><?php the_title(); ?></h3>
+                  <?php echo the_content(); ?>
+                </div>
+
+            <?php } wp_reset_postdata(); ?>
           </div>
+          <?php } else { // no posts found
+          } ?>
         </div>
       </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-6">
-        <div class="col">
-          <div class="prayer-item">
-            <h4>James Dawson</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
 
-<section class="bg blue-img">
+<section id="prayer-form" class="bg blue-img">
   <div class="container">
     <div class="mid-col">
         <h2>Make a Prayer Intention</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
+        <?php echo do_shortcode('[user-submitted-posts]'); ?>
 
+        <script>
+        $( document ).ready(function() {
+          $('#user-submitted-title').attr('placeholder','Your Name');
+          $('#user-submitted-content').attr('placeholder','Your Prayer Intentions');
+        });
+        </script>
     </div>
   </div>
 </section>
