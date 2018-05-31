@@ -26,7 +26,7 @@
 
   <section id="featured-triplets">
     <div class="container">
-      <div class="columns">
+      <div class="columns col-max">
         <div class="col-4">
           <div class="col">
             <a href="/sfc/about-us"><div class="img"></div></a>
@@ -69,7 +69,7 @@
           Deepen Your Relationship With God</h2>
         <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
       </div>
-      <div class="columns">
+      <div class="columns col-max">
         <div class="col-3">
           <div class="col">
             <div class="img"></div>
@@ -150,14 +150,14 @@
       <h2 class="section-title"><strong>Latest Articles</strong></h2>
       <?php
       $args = array(
-        'posts_per_page' => 6,
+        'posts_per_page' => 4,
         'post_type'   => 'articles'
       );
       $articles = new WP_Query( $args );
       if ( $articles->have_posts() ) { ?>
-        <div class="columns articles">
+        <div class="columns col-max articles">
           <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
-          <div class="col-6">
+          <div class="col-3">
             <div class="col">
               <div class="article-item">
                 <?php if ( has_post_thumbnail() ) : ?>

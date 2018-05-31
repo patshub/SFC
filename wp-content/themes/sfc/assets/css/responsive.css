@@ -36,9 +36,6 @@
   .col-3:nth-child(4n-3) .col
   { padding: 0 0 2.35em 0!important; }
 
-  [class*='col-']:last-child .col{
-    padding-bottom: 0!important;
-  }
   .faq-section .col{
     padding:0!important;
   }
@@ -71,15 +68,17 @@
     margin:10px 0;
   }
 
-  .articles .col{
+  .columns.col-max .col{
     padding-bottom: 25px!important;
   }
-
-  .article-info{
-    width: 63%;
+  .col-4:last-child .col,
+  .col-3:last-child .col,
+  .col-6:last-child .col{
+    padding-bottom: 0!important;
   }
-  .article-img{
-    height: 85px;
+
+  #clp-sessions .col{
+    padding-bottom: 10px!important;
   }
 
   #page-header.node{

@@ -38,7 +38,7 @@
 
   <section class="bg grey">
     <div class="container">
-      <div class="columns">
+      <div class="columns col-max">
         <div class="col-4">
           <div class="col">
             <a href="#"><div class="img"></div></a>

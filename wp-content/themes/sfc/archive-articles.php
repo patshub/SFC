@@ -12,7 +12,7 @@
       );
       $articles = new WP_Query( $args );
       if ( $articles->have_posts() ) { ?>
-      <div class="columns articles">
+      <div class="columns col-max articles">
         <?php	while ( $articles->have_posts() ) { $articles->the_post(); ?>
         <div class="col-4">
           <div class="col">
@@ -50,7 +50,7 @@
       }
       $paged = get_query_var( 'paged' );
       $args2 = array(
-        'posts_per_page' => 6,
+        'posts_per_page' => 8,
         'post_type'   => 'articles',
         's' => $keyword,
         'category__not_in' => array(8),
@@ -62,7 +62,7 @@
 
       <div class="columns articles">
         <?php	while ( $articles2->have_posts() ) { $articles2->the_post(); ?>
-        <div class="col-6">
+        <div class="col-3">
           <div class="col">
             <div class="article-item">
               <?php if ( has_post_thumbnail() ) : ?>

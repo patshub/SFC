@@ -17,7 +17,7 @@
         );
         $photos = new WP_Query( $args );
         if ( $photos->have_posts() ) { ?>
-        <div class="columns">
+        <div class="columns col-max">
           <?php	while ( $photos->have_posts() ) { $photos->the_post(); ?>
           <div class="col-4">
             <div class="col">
