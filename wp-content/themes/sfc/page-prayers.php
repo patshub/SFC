@@ -58,6 +58,7 @@
                 <div class="prayer-item">
                   <h3><?php the_title(); ?></h3>
                   <?php echo the_content(); ?>
+                  <div class="white-fade"></div>
                 </div>
 
             <?php } wp_reset_postdata(); ?>

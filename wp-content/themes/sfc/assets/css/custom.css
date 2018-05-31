@@ -12,10 +12,10 @@ h2.section-title{
 }
 .subtitle{
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: -5px;
   color: rgba(0,0,0,0.25);
-  font-weight: 800;
+  font-weight: 700;
 
   text-transform: uppercase;
 }
@@ -24,7 +24,7 @@ h2.section-title{
 }
 
 .excerpt{
-  opacity: .5;
+  opacity: .75;
   font-size: .9em;
 }
 
@@ -50,7 +50,7 @@ h2.section-title{
 .bg,
 .standalone-img{
   background-image: url('../images/bg-main.png');
-  padding: 45px 0;
+  padding: 35px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -84,6 +84,10 @@ h2.section-title{
   color: #fff!important;
 }
 
+.bg.black-n-white{
+  background-image: url('../images/bg-black-n-white.png');
+}
+
 .bg.lightblue-img{
   background-image: url('../images/bg-lightblue-img.png');
 }
@@ -106,20 +110,19 @@ header{
   width: 100%;
   background-color: #fff;
   z-index: 999;
-  box-shadow: 1px 1px 5px lightgrey;
 }
 header .logo{
-  width: 300px;
+  width: 230px;
   display: inline-block;
   vertical-align: middle;
 
   position: relative;
-  top: 12px;
+  top: 7px;
 }
 ul.menu{
   display: inline-block;
   float: right;
-  padding: 10px 0;
+  padding: 0 0;
 }
 ul.menu li{
   vertical-align: middle;
@@ -142,8 +145,12 @@ ul.menu img.icon-home{
 }
 
 /* COLUMNS */
+.columns{
+  margin: 0!important;
+}
 .columns.col-max .col{
   padding-bottom: 0!important;
+  margin:0!important;
 }
 .columns .img{
   background-image: url('../images/placeholders/1.png');
@@ -161,7 +168,7 @@ ul.menu img.icon-home{
 
 .columns .col-3 .img,
 .columns .col-3:hover .img
-{ height: 180px; }
+{ height: 140px; }
 
 .columns .info{
   margin:15px 0 0 0;
@@ -173,42 +180,81 @@ ul.menu img.icon-home{
 
 /* Home Banner */
 #home-banner{
-  background-image: url('../images/bg-main.png');
+  background-image: url('../images/bg-home-banner.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: 50% 25%;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 50px 0;
   margin:0;
 
   position: relative;
   overflow: hidden;
 }
-#home-banner .headline{
+#home-banner .container{
   position: relative;
-  z-index: 3;
+  z-index: 1;
+}
+#home-banner .logo-header{
+  width: 350px;
+  display: block;
+  margin: auto;
 }
 #home-banner .headline h1{
   font-size: 4em;
   color: #fff;
   text-align: center;
   margin:0;
-  font-weight: 700;
+  font-weight: 500;
+
+  font-family: 'Alegreya Sans SC';
+  letter-spacing: 0px;
 }
-#home-banner .headline p{
-  text-align: center;
-  color: #fff;
-  margin:0;
+span.label-southbay{
+  font-weight: 300;
+  font-family: 'Lato';
+  font-size: .21em;
+  display: block;
+  line-height: 100%;
+  margin-top: -25px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
+
 #home-banner .headline a.btn{
   margin: 20px auto 0 auto;
 }
-#home-banner .headline img{
-  width: 85px;
+#home-banner .banner-logo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:-60px;
+  z-index: -1;
+}
+#home-banner .banner-logo img{
+  width: 220px;
   margin: auto;
   display: block;
+
+  position: relative;
+
 }
 #home-banner .dimmer{
-  background-color: rgba(0,0,0,0.35);
+  opacity: .7;
+}
+
+#home-banner h3{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+
+  display: block;
+}
+#home-banner p{
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  line-height: 160%;
+  opacity: .75;
 }
 
 /* #home-banner ul.banner-menu{
@@ -265,7 +311,7 @@ ul.menu img.icon-home{
 
 /* Featured Triplets */
 #featured-triplets{
-  padding:45px 0;
+  padding:35px 0;
   margin: 0;
 }
 /* Featured Contents */
@@ -274,7 +320,7 @@ ul.menu img.icon-home{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0;
+  padding: 35px 0;
   color: #fff;
   margin:0;
 }
@@ -301,7 +347,7 @@ ul.menu img.icon-home{
   background-size: cover;
   background-position: 50% 0%;
   background-repeat: no-repeat;
-  padding: 250px 0 60px 0;
+  padding: 200px 0 45px 0;
   color: #fff;
   text-align: center;
 }
@@ -343,6 +389,9 @@ ul.menu img.icon-home{
 }
 
 /* Home Prayer Intentions */
+#prayers-home{
+  /* background-image: url('../images/bg-prayer.jpeg'); */
+}
 #prayers-home .subtitle{
   color: rgba(255,255,255,0.35);
 }
@@ -360,7 +409,7 @@ ul.menu img.icon-home{
 }
 .article-img{
   width: 100%;
-  height: 170px;
+  height: 140px;
   display: inline-block;
   margin-bottom: 5%;
 
@@ -382,7 +431,8 @@ ul.menu img.icon-home{
 
 .articles a h4{
   color: #000;
-  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 5px;
 }
 
 /* Page Headers */
@@ -446,7 +496,7 @@ ul.menu img.icon-home{
 
 /* Special Page Headers */
 #page-header.special{
-  padding:120px 0;
+  padding:100px 0 115px 0;
 }
 #page-header.special h1{
   white-space: normal;
@@ -456,7 +506,8 @@ ul.menu img.icon-home{
 }
 #page-header.special .subtitle{
   color: rgba(255,255,255,.65);
-  margin-bottom: -15px;
+  margin-bottom: -20px;
+  margin-top: 5px;
 }
 #page-header.special.clp{
   background-image: url('../images/bg-clp.png')!important;
@@ -468,7 +519,8 @@ ul.menu img.icon-home{
   background-image: url('../images/bg-motherandchild.png')!important;
 }
 .dimmer{
-  background-color: rgba(0,0,0,0.35);
+  background-color: black;
+  opacity: .35;
   width: 100%;
   height: 10000px;
 
@@ -490,10 +542,10 @@ ul.menu img.icon-home{
   margin: auto;
 }
 .liner.top{
-  top: -10px;
+  top: -5px;
 }
 .liner.bottom{
-  top:20px;
+  top:25px;
 }
 
 /* About Page */
@@ -570,14 +622,12 @@ ul.menu img.icon-home{
 .faq-item p{
   margin-top: 10px;
   display: none;
-}
-.faq-item.open h4{
-  font-weight: 600;
+  opacity: .75;
 }
 .faq-item h4{
   margin:0!important;
   position: relative;
-  font-weight: 400;
+  font-weight: 600;
 }
 .faq-item h4:after{
   font-family: FontAwesome;
@@ -598,7 +648,7 @@ ul.menu img.icon-home{
 
 /* Filter */
 .filter{
-  margin:20px 0 30px 0;
+  margin:10px 0 15px 0;
 }
 .filter input{
   display: inline-block;
@@ -622,9 +672,9 @@ ul.menu img.icon-home{
   top: 0;
 }
 .node-content{
-  width: 750px;
+  width: 650px;
   max-width: 100%;
-  margin-top: 45px;
+  margin-top: 35px;
   background-color: #fff;
 
   padding: 25px;
@@ -634,16 +684,20 @@ ul.menu img.icon-home{
   position: relative;
   z-index: 3;
 }
+.node-content ul.breadcrumbs{
+  margin-top: 0;
+}
 .node-content .node-body{
   margin:20px 0 0 0;
 }
 .node-content h1{
   margin:5px 0;
+  font-size: 1.85em;
 }
 .node-img{
   width: 100%;
-  height: 350px;
-  margin-bottom: 20px;
+  height: 300px;
+  margin-bottom: 15px;
 
   background-position: center;
   background-size: cover;
@@ -703,6 +757,12 @@ ul.menu img.icon-home{
 }
 #prayer-form .usp-category label{
   display: block;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  background-color: rgba(0,0,0,0.25);
+}
+#prayer-form .usp-category label p{
+  margin: 0;
 }
 #prayer-form input,
 #prayer-form textarea,
@@ -720,7 +780,7 @@ ul.menu img.icon-home{
 /* Footer */
 footer{
   background-color: #0095da;
-  padding: 45px 0;
+  padding: 35px 0;
   position: relative;
   color: #fff;
 }
@@ -734,6 +794,9 @@ footer .footer-col-logo{
   padding-left:0;
   padding-right: 3em;
   box-sizing: border-box;
+}
+footer .footer-col-logo .col{
+  padding-left: 0!important;
 }
 footer .footer-col-menu{
   width:62%;
@@ -751,7 +814,7 @@ footer li a,
   opacity: .75!important;
   color: #fff!important;
   transition-duration: .2s;
-  font-weight: 400;
+  font-weight: 600;
 }
 footer p:hover,
 footer li a:hover{
@@ -938,7 +1001,7 @@ footer .bibleVerse a{
   font-size: 1.25em;
   margin: 0 0 15px 10px;
 
-  font-weight: 400;
+  font-weight:400;
 
   border-bottom: 1px solid rgba(0,0,0,0.2);
   padding-bottom: 10px;
@@ -946,12 +1009,12 @@ footer .bibleVerse a{
   color: rgba(0,0,0,0.4);
 }
 .bx-pager-link.active .pager-item{
-  font-weight: 700;
+  font-weight: 600;
   color: rgba(0,0,0,0.75);
 }
 .bx-pager-link .pager-item .post-date{
   margin-top: 5px;
   display: block;
-  font-weight: 400;
+  font-weight: 600;
   font-size: .85em;
 }

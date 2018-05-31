@@ -185,6 +185,10 @@ function enqueue_lightbox() {
 }
 add_action( 'post_gallery_enqueue', 'enqueue_lightbox' );
 
+function custom_excerpt_length( $length ) {
+   return 15;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 // function create_topics_nonhierarchical_taxonomy() {
 // // Labels part for the GUI

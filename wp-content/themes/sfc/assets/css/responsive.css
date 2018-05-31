@@ -1,9 +1,14 @@
+@media only screen and (max-width: 1280px) {
+  body{
+    font-size: 15px;
+  }
+}
 @media only screen and (max-width: 1150px) {
   .container{ width: 85%; }
 
   header .logo{
     width: 220px;
-    top:20px;
+    /* top:20px; */
   }
 
   ul.menu li{

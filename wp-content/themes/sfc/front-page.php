@@ -2,24 +2,17 @@
   <?php //if (function_exists('user_submitted_posts')) user_submitted_posts(); ?>
 
   <section id="home-banner">
+
     <div class="container">
-      <div class="col-1">
+      <div class="col-3">
       </div>
-      <div class="col-10 headline">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-white-cross.svg"/>
-        <h1>Singles for Christ</h1>
-        <p>Every single man and woman all over the world experiencing Christ.</p>
-        <a class="btn hover-white" href="/sfc/about-us">Learn More</a>
+      <div class="col-6">
+        <img class="logo-header" src="<?php bloginfo('template_url'); ?>/assets/images/logo-header.svg"/>
       </div>
-      <div class="col-1">
-        <!-- <ul class="banner-menu">
-          <li><a href="#">Latest Articles</a></li>
-          <li><a href="#">Upcoming Events</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Make a Prayer Intention</a></li>
-        </ul> -->
+      <div class="col-3">
       </div>
+      <!-- <div class="col-1">
+      </div> -->
     </div>
     <div class="dimmer"></div>
   </section>
@@ -64,7 +57,7 @@
   <section id="featured-contents">
     <div class="container">
       <div class="headline">
-        <h2 class=" no-margin">
+        <h2 class=" ">
           <span class="subtitle">What We Do</span>
           Deepen Your Relationship With God</h2>
         <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
@@ -126,7 +119,7 @@
       </div>
       <div class="col-6">
         <div class="col">
-          <h2 class=" no-margin"><span class="subtitle">HELP THE POOR</span>Answering the Cry of the Poor</h2>
+          <h2 class=" "><span class="subtitle">HELP THE POOR</span>Answering the Cry of the Poor</h2>
           <p>ANCOP is an acronym which stands for Answering the Cry of the Poor. ANCOP USA shares Christ’s love among the poor, uplifts their lives, restores their dignity as children of God, and transforms communities.</p>
           <a href="/sfc/ancop" class="btn">Learn More</a>
         </div>
@@ -137,7 +130,7 @@
   <section id="prayers-home" class="bg">
     <div class="container">
       <div class="mid-col">
-        <h2 class=" no-margin"><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
+        <h2 class=" "><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
         <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
         <a href="/sfc/prayers" class="btn white hover-white">Make a Prayer Intention</a>
       </div>
@@ -166,7 +159,7 @@
                 <div class="article-info">
                   <a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a>
                   <span class="post-date excerpt"><?php echo get_the_date('F j, Y'); ?></span>
-                  <div class="excerpt"><?php echo the_excerpt(25); ?></div>
+                  <div class="excerpt"><?php echo the_excerpt(5); ?></div>
                   <a href="<?php the_permalink(); ?>" class="btn secondary">Read Article</a>
                 </div>
               </div>
