@@ -18,7 +18,11 @@
         });
       </script>
 
-      <h2 class="media-title" style="margin-bottom:10px;">Photos</h2>
+      <h2 class="media-title" style="margin-bottom:5px;">
+        <a href="#video-playlist"><span class="other-media-title">Videos</span></a>
+        Photos
+        <a href="#music-playlist"><span class="other-media-title">Music</span></a>
+      </h2>
 
         <?php
         $paged = get_query_var( 'paged' );
@@ -62,11 +66,11 @@
 
   <section id="video-playlist" class="">
     <div class="container">
-      <!-- <h2 class="section-title align-center">
-        <span class="subtitle">Revisiting the Experience</span>
-        <strong>Video Playlist</strong>
-      </h2> -->
-      <h2 class="media-title">Videos</h2>
+      <h2 class="media-title">
+        <a href="#photo-albums"><span class="other-media-title">Photos</span></a>
+        Videos
+        <a href="#music-playlist"><span class="other-media-title">Music</span></a>
+      </h2>
 
       <script>
         $(document).ready(function(){
@@ -121,13 +125,13 @@
     </div>
   </section>
 
-  <section class="">
+  <section id="music-playlist">
     <div class="container">
-      <!-- <h2 class="section-title align-center">
-        <span class="subtitle">Praise and Worship</span>
-        <strong>Music Playlist</strong>
-      </h2> -->
-      <h2 class="media-title">Music</h2>
+      <h2 class="media-title">
+        <a href="#photo-albums"><span class="other-media-title">Photos</span></a>
+        Music
+        <a href="#video-playlist"><span class="other-media-title">Videos</span></a>
+      </h2>
         <div>
         <?php
         $args = array(

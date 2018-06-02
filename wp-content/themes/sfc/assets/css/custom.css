@@ -925,20 +925,35 @@ footer .bibleVerse a{
   top:-150px;
   left:0;
   z-index: -1;
-  /* filter: grayscale(100%); */
+  filter: grayscale(100%);
 }
 .media-title{
   font-family: 'Dancing Script';
   text-transform: capitalize;
-  font-size: 3.5em;
-  color: #0095da;
+  font-size: 2.75em;
+  font-weight: 900;
+  /* color: #0095da; */
   margin:0 0 30px 0;
   display: block;
   text-align: center;
 }
+.other-media-title {
+  font-size: .65em;
+  position: relative;
+  top: -3px;
+  opacity: .2;
+  margin: 0 7.5px;
+  color: #000;
+  transition-duration: .2s;
+}
+.other-media-title:hover{
+  color: #0095da;
+  opacity: 1;
+  transition-duration: .2s;
+}
 #photo-albums .img{
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%); */
+  /* filter: grayscale(100%); */
   transition-duration: 0.2s;
 }
 #photo-albums .img:hover{
@@ -1211,7 +1226,6 @@ footer .bibleVerse a{
 .word-art{
   padding: 0!important;
   /* background-image: url('../images/bg-black-n-white.png'); */
-  background-color: #000;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
