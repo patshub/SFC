@@ -5,20 +5,20 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.0.0
+ * @version 2.2.0
  */ 
 ?>
 <section id="general"
     <?php if ( $tab != 'general' ) : ?>style="display: none;"<?php endif ?>
 >
     <h2>
-        <?php _e( 'General', 'post-gallery' ) ?>
+        <?php _e( 'General', 'simple-post-gallery' ) ?>
     </h2>
 
     <table class="form-table">
 
         <tr valign="top">
-            <th scope="row"><?php _e( 'Enqueue assets', 'post-gallery' ) ?></th>
+            <th scope="row"><?php _e( 'Enqueue assets', 'simple-post-gallery' ) ?></th>
             <td>
                 <input type="checkbox"
                     name="can_enqueue"
@@ -27,11 +27,11 @@
                 />
                 <br>
                 <span class="description">
-                    <?php _e( 'Indicates whether or not to enqueue default scripts and styles when displaying generated gallery.', 'post-gallery' ) ?>
+                    <?php _e( 'Indicates whether or not to enqueue default scripts and styles when displaying generated gallery.', 'simple-post-gallery' ) ?>
                 </span>
                 <br>
                 <span class="description">
-                    <?php _e( 'This plugin uses lightbox by default to display the gallery.', 'post-gallery' ) ?>
+                    <?php _e( 'This plugin uses lightbox by default to display the gallery.', 'simple-post-gallery' ) ?>
                 </span>
             </td>
         </tr>
@@ -39,11 +39,11 @@
     </table>
 
     <h3>
-        <?php _e( 'Post types', 'post-gallery' ) ?>
+        <?php _e( 'Post types', 'simple-post-gallery' ) ?>
     </h3>
 
     <p class="description">
-        <?php _e( 'Select the post types that will support galleries:', 'post-gallery' ) ?>
+        <?php _e( 'Select the post types that will support galleries:', 'simple-post-gallery' ) ?>
     </p>
 
     <div class="types">
@@ -65,17 +65,17 @@
     </div>
 
     <h3>
-        <?php _e( 'Gallery metabox', 'post-gallery' ) ?>
+        <?php _e( 'Gallery metabox', 'simple-post-gallery' ) ?>
     </h3>
 
     <p class="description">
-        <?php _e( 'Properties of the metabox that will appear when creating or editing a new post.', 'post-gallery' ) ?>
+        <?php _e( 'Properties of the metabox that will appear when creating or editing a new post.', 'simple-post-gallery' ) ?>
     </p>
 
     <table class="form-table">
 
         <tr valign="top">
-            <th scope="row"><?php _e( 'Context', 'post-gallery' ) ?></th>
+            <th scope="row"><?php _e( 'Context', 'simple-post-gallery' ) ?></th>
             <td>
                 <select name="metabox_context">
                     <option value="advanced"
@@ -98,7 +98,7 @@
         </tr>
 
         <tr valign="top">
-            <th scope="row"><?php _e( 'Priority', 'post-gallery' ) ?></th>
+            <th scope="row"><?php _e( 'Priority', 'simple-post-gallery' ) ?></th>
             <td>
                 <select name="metabox_priority">
                     <option value="default"

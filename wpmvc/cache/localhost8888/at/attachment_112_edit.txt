@@ -1,0 +1,1 @@
+a:4:{s:5:"value";s:85:"http://localhost:8888/sfc/wp-content/uploads/2018/06/112-bg-motherandchild-170x65.png";s:10:"write_time";i:1527967430;s:10:"expired_in";i:2592000;s:12:"expired_time";i:1530559430;}

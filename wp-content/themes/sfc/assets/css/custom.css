@@ -12,12 +12,13 @@ h2.section-title{
 }
 .subtitle{
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: -5px;
   color: rgba(0,0,0,0.25);
   font-weight: 700;
 
   text-transform: uppercase;
+  font-family: 'Lato';
 }
 .no-margin{
   margin: 0!important;
@@ -26,6 +27,9 @@ h2.section-title{
 .excerpt{
   opacity: .75;
   font-size: .9em;
+
+  position: relative;
+  z-index: 3;
 }
 
 .mid-col{
@@ -45,12 +49,15 @@ h2.section-title{
   margin: .75em 0;
 }
 
+.headline{
+  position: relative;
+}
 
 /* BACKGROUND IMAGES */
 .bg,
 .standalone-img{
   background-image: url('../images/bg-main.png');
-  padding: 35px 0;
+  padding: 45px 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -117,7 +124,6 @@ header .logo{
   vertical-align: middle;
 
   position: relative;
-  top: 7px;
 }
 ul.menu{
   display: inline-block;
@@ -125,12 +131,19 @@ ul.menu{
   padding: 0 0;
 }
 ul.menu li{
-  vertical-align: middle;
-  font-family: 'Nunito Sans';
-  font-weight: 600;
+  /* vertical-align: middle; */
+  font-family: 'Palanquin';
+  font-weight: 500;
+  border-bottom: 1px solid #fff;
+  transition-duration: 0.2s;
+}ul.menu li:hover a{
+  color: #0095da;
+  transition-duration: 0.2s;
 }
 ul.menu li:first-child{
   vertical-align: top;
+  position: relative;
+  top:-1px;
 }
 ul.menu li a{
   color: #000;
@@ -311,7 +324,7 @@ span.label-southbay{
 
 /* Featured Triplets */
 #featured-triplets{
-  padding:35px 0;
+  padding:45px 0;
   margin: 0;
 }
 /* Featured Contents */
@@ -320,7 +333,7 @@ span.label-southbay{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 35px 0;
+  padding: 45px 0;
   color: #fff;
   margin:0;
 }
@@ -382,7 +395,7 @@ span.label-southbay{
   margin-top: 20px;
 }
 #ancop-home .col-6 .col{
-  padding-top: 35px;
+  padding-top: 45px;
 }
 #ancop-home p{
   margin:.75em 0;
@@ -431,7 +444,7 @@ span.label-southbay{
 
 .articles a h4{
   color: #000;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
@@ -442,6 +455,7 @@ span.label-southbay{
   background-position: center;
   background-repeat: no-repeat;
   padding: 60px;
+  box-sizing: border-box;
   text-align: center;
 
   position: relative;
@@ -456,15 +470,16 @@ span.label-southbay{
 #page-header ul.breadcrumbs{
   margin: 0;
 }
+#page-header ul.breadcrumbs li{
+  font-size: 16px;
+}
 #page-header h1{
   font-size: 3em;
   position: relative;
-  z-index: 2;
+  z-index: 10;
 
   display: table;
   margin: auto;
-
-  white-space: nowrap;
 }
 #page-header h1:after{
   /* content: "a"; */
@@ -505,9 +520,13 @@ span.label-southbay{
   display: none;
 }
 #page-header.special .subtitle{
-  color: rgba(255,255,255,.65);
-  margin-bottom: -20px;
-  margin-top: 5px;
+  /* color: rgba(255,255,255,.65); */
+  color: #0095da;
+  margin-bottom: -10px;
+  margin-top: 10px;
+  font-family: 'Dancing Script';
+  font-size: 34px;
+  text-transform: capitalize;
 }
 #page-header.special.clp{
   background-image: url('../images/bg-clp.png')!important;
@@ -520,7 +539,7 @@ span.label-southbay{
 }
 .dimmer{
   background-color: black;
-  opacity: .35;
+  opacity: .7;
   width: 100%;
   height: 10000px;
 
@@ -532,11 +551,11 @@ span.label-southbay{
 
 .liner{
   width: 50px;
-  height: 3px;
+  height: 2px;
 
   background-color: #fff;
   position: relative;
-  z-index: 3;
+  z-index: 10;
 
   display: block;
   margin: auto;
@@ -627,7 +646,7 @@ span.label-southbay{
 .faq-item h4{
   margin:0!important;
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
 }
 .faq-item h4:after{
   font-family: FontAwesome;
@@ -660,48 +679,6 @@ span.label-southbay{
 }
 .filter input[type="text"]{
   width: 300px;
-}
-
-
-/* Node Content */
-#page-header.node{
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: -3;
-  top: 0;
-}
-.node-content{
-  width: 650px;
-  max-width: 100%;
-  margin-top: 35px;
-  background-color: #fff;
-
-  padding: 25px;
-  box-sizing: border-box;
-  box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
-
-  position: relative;
-  z-index: 3;
-}
-.node-content ul.breadcrumbs{
-  margin-top: 0;
-}
-.node-content .node-body{
-  margin:20px 0 0 0;
-}
-.node-content h1{
-  margin:5px 0;
-  font-size: 1.85em;
-}
-.node-img{
-  width: 100%;
-  height: 300px;
-  margin-bottom: 15px;
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* Prayer Intentions Page */
@@ -750,6 +727,9 @@ span.label-southbay{
 #prayer-warriors-asseble a.btn{
   margin: 25px auto 0 auto;
 }
+#prayer-warriors-asseble img{
+  width: 275px;
+}
 
 /* Prayer Intention Form */
 #prayer-form label{
@@ -780,7 +760,7 @@ span.label-southbay{
 /* Footer */
 footer{
   background-color: #0095da;
-  padding: 35px 0;
+  padding: 45px 0;
   position: relative;
   color: #fff;
 }
@@ -814,7 +794,7 @@ footer li a,
   opacity: .75!important;
   color: #fff!important;
   transition-duration: .2s;
-  font-weight: 600;
+  font-weight: 400;
 }
 footer p:hover,
 footer li a:hover{
@@ -828,16 +808,22 @@ footer ul.menu{
 }
 footer ul.menu li{
   display: block;
+  margin-left: 0;
+  border-bottom:none;
+}footer ul.menu li a{
+  color: #fff;
 }
 
 footer .social-media img{
-  width: 40px;
+  width: 35px;
   display: inline-block;
-  margin-right: 5px;
+  margin-right: 3px;
 }
 
 footer .bibleVerse a{
   color: #fff;
+  font-weight: 500;
+  font-size: 1.15em;
 }
 
 #bottom-footer{
@@ -931,37 +917,102 @@ footer .bibleVerse a{
 
 
 /* Media */
-#photo-albums .img{
-  overflow: hidden;
-  display: block;
-  height:260px;
-}
-#photo-albums .info{
-  padding: 15px 15px 25px 15px;
-  box-sizing: border-box;
 
-  background-color: rgba(0,0,0,0.5);
-
+#page-header .bg-video{
   position: absolute;
-  bottom: -10px;
-
   width: 100%;
-
+  height: auto;
+  top:-150px;
+  left:0;
+  z-index: -1;
+  /* filter: grayscale(100%); */
+}
+.media-title{
+  font-family: 'Dancing Script';
+  text-transform: capitalize;
+  font-size: 3.5em;
+  color: #0095da;
+  margin:0 0 30px 0;
   display: block;
+  text-align: center;
 }
-
-#photo-albums .info h4{
-  color: #fff!important;
+#photo-albums .img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition-duration: 0.2s;
 }
-#photo-albums .info .excerpt{
-  color: #fff;
-  opacity: .75;
+#photo-albums .img:hover{
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transition-duration: 0.2s;
 }
-#photo-albums .info a.btn{
-  color: #fff;
-  margin:0;
+#photo-albums .photo-album-headline{
+  margin-bottom: 30px;
+}
+#photo-albums h2{
+  text-align: center;
+}
+#photo-albums .post-date{
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+.photo-album-collection .columns{
+ max-height: 650px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#photo-albums .bx-wrapper .bx-controls-direction a{
+  text-indent: 0;
+  width: auto;
+  position: relative;
+  color: #000;
+  opacity: .5;
+}
+#photo-albums .bx-wrapper .bx-next{
+  right:0!important;
+  background: none!important;
+  margin-left: 20px;
+}#photo-albums .bx-wrapper .bx-next:after{
+  font-family: FontAwesome;
+  content: "\f0da";
+  margin-left: 7px;
+  font-size: 1.15em;
+}
+#photo-albums .bx-wrapper .bx-prev{
+  left:0!important;
+  background: none!important;
+}
+#photo-albums .bx-wrapper .bx-prev:before{
+  font-family: FontAwesome;
+  content: "\f0d9";
+  margin-right: 7px;
+  font-size: 1.15em;
+}
+#photo-albums .bx-controls{
+  position: absolute;
+  top: 5px;
+  margin: 0!important;
+  display: block;
+  width: 100%;
+}
+#photo-albums .bx-controls-direction{
+  margin: auto;
+  display: table;
   float: right;
-  display: inline-block;
+}
+/* #photo-albums .bx-wrapper .bx-pager{
+  display: none!important;
+} */
+
+#photo-albums .col-4:nth-child(3n-2) .col{
+  padding: 0 .8em 1.6em 0;
+}
+#photo-albums .col-4:nth-child(3n-1) .col{
+  padding: 0 .8em 1.6em .8em;
+}
+#photo-albums .col-4:nth-child(3n) .col{
+  padding: 0 0 1.6em .8em;
 }
 
 #video-playlist .article-info{
@@ -979,19 +1030,22 @@ footer .bibleVerse a{
   background: transparent!important;
   margin:0!important;
 }
-.bx-controls{
+#video-playlist .bx-controls{
   width: 35%!important;
   display: inline-block;
   vertical-align: top;
 }
-.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{
+#video-playlist .bx-wrapper .bx-pager,#video-playlist .bx-wrapper .bx-controls-auto{
   position: relative!important;
   text-align: left!important;
   padding:15px!important;
   bottom:0!important;
+  height: 420px!important;
+
+  overflow: auto;
 
 }
-.bx-wrapper .bx-pager-item{
+#video-playlist .bx-wrapper .bx-pager-item{
   font-size: 1em!important;
   display: block!important;
   line-height: 140%!important;
@@ -1008,13 +1062,163 @@ footer .bibleVerse a{
 
   color: rgba(0,0,0,0.4);
 }
-.bx-pager-link.active .pager-item{
-  font-weight: 600;
+#video-playlist .bx-pager-link.active .pager-item{
+  font-weight: 800;
   color: rgba(0,0,0,0.75);
 }
-.bx-pager-link .pager-item .post-date{
+#video-playlist .bx-pager-link .pager-item .post-date{
   margin-top: 5px;
   display: block;
-  font-weight: 600;
+  font-weight: 500;
   font-size: .85em;
+}
+
+
+
+/* Node Content */
+#node #page-header{
+  background-image: url('../images/bg-main.png');
+  width: 100%;
+  top: 0;
+
+  margin-bottom: -100px;
+  padding: 20px 0 125px 0;
+
+  position: relative;
+}
+#node #page-header h1{
+  margin:15px auto 5px auto;
+  font-size: 2em;
+  white-space: normal;
+  font-weight: 400;
+}
+#node #page-header .subtitle,
+#node #page-header .subtitle a{
+  color: rgba(255,255,255,.6);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+#node #page-header li.subtitle:last-child{
+  color:#0095da;
+}
+#node #page-header .post-date{
+  color: #fff;
+}
+
+#node #page-header .headline{
+  position: relative;
+  z-index: 3;
+  width:750px;
+  max-width: 100%;
+  display: block;
+  margin:auto;}
+#node .node-content{
+  width: 750px;
+  max-width: 100%;
+  margin:auto;
+  background-color: #fff;
+
+  padding: 25px;
+  box-sizing: border-box;
+
+  position: relative;
+  z-index: 3;
+}
+#node .node-content ul.breadcrumbs{
+  margin-top: 0;
+}
+#node .node-content .node-body{
+}
+
+#node .node-img{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 15px;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Music Node Page */
+#node.music #page-header{
+  background-image: url('../images/bg-music.png');
+}
+#node.music #page-header .dimmer{
+  opacity: .7;
+}
+
+
+/* Gallery Lightbox */
+.lb-outerContainer{
+  background-color: transparent!important;
+}
+#node.photos .node-content{
+  width:100%;
+}
+#node.photos .node-content,
+#node.photos .node-content .col{
+  padding: .5em;
+}
+#node.photos #page-header{
+  height: 500px;
+  margin-bottom: -320px;
+}
+#node.photos #page-header .dimmer{
+  opacity: .8;
+}
+#node.photos #page-header .columns{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+#node.photos #page-header .col-4{vertical-align:baseline;}
+#node.photos #page-header .col{
+  padding:0;
+}
+#node.photos #page-header .img{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+/* Archive Article */
+#page-header.archive-articles{
+  background-image: url('../images/bg-news.png')!important;
+}
+#page-header.archive-articles .dimmer{
+  opacity: .6;
+}
+
+/* Article Node Page */
+#node.articles #page-header{
+  background-image: url('../images/bg-news.png');
+  background-position: 0 45%;
+}
+#node.articles #page-header .dimmer{
+  opacity: .6;
+}
+
+
+/* Word Art */
+#word-message{
+  margin: 0;
+}
+.wordart-attribution{
+  display: none;
+}
+.word-art{
+  padding: 0!important;
+  /* background-image: url('../images/bg-black-n-white.png'); */
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 45px 0!important;
+  box-sizing: border-box;
+}
+.wordart-canvas{
+  /* opacity: .9; */
 }

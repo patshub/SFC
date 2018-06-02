@@ -11,19 +11,20 @@ use WPMVC\Bridge;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality
  * @package PostGallery
- * @version 2.1.8
+ * @version 2.2.0
  */
 class Main extends Bridge
 {
     /**
      * Declaration of public wordpress hooks.
-     * @since 2.1.0
+     * @since 2.2.0
      */
     public function init()
     {
         $this->add_shortcode('post_gallery', 'GalleryController@show');
         $this->add_action('wp_enqueue_scripts', 'ConfigController@enqueue');
         $this->add_filter('plugin_action_links_simple-post-gallery/plugin.php', 'ConfigController@plugin_links');
+        $this->add_action('plugins_loaded', 'ConfigController@load_textdomain');
         // -- Video importer
         $this->add_filter('media_upload_tabs', 'VideoController@media_tabs');
         $this->add_action('media_upload_video_importer', 'VideoController@media_tab');
@@ -38,7 +39,7 @@ class Main extends Bridge
     /**
      * Declaration of admin only wordpress hooks.
      * For Wordpress admin dashboard.
-     * @since 2.1.8
+     * @since 2.2.0
      */
     public function on_admin()
     {
@@ -49,7 +50,7 @@ class Main extends Bridge
         $this->add_action('post_gallery_extended_formats', 'view@plugins.post-gallery.admin.extended-formats');
         $this->add_filter('post_gallery_metabox_shortcode_actions', 'AdminController@shortcode_actions', 1);
         // -- Notices
-        $this->add_action('admin_init', 'NoticeController@check_dismissed');
-        $this->add_action('admin_notices', 'NoticeController@show');
+        //$this->add_action('admin_init', 'NoticeController@check_dismissed');
+        //$this->add_action('admin_notices', 'NoticeController@show');
     }
 }

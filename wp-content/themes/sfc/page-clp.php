@@ -1,7 +1,8 @@
 <?php include 'header.php'; ?>
 <?php include 'header-special.php'; ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-<section class="bg lightblue-img">
+  <style>#page-header.special{background-position: 100% 10%;}</style>
+<section class="bg blue-img">
   <div class="container">
     <div class="mid-col">
       <h2>What is CLP?</h2>
@@ -107,7 +108,7 @@
 <section id="register-clp" class="bg blue-img">
   <div class="container">
     <div class="mid-col">
-      <h2>Register</h2>
+      <h2><strong>Register</strong></h2>
       <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
       <?php echo do_shortcode('[contact-form-7 id="61" title="CLP Entries"]'); ?>
     </div>

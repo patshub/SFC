@@ -5,7 +5,7 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.0
+ * @version 2.2.1
  */ 
 ?>
 <div id="<?php echo isset( $attachment ) ? $attachment->ID : '{{id}}' ?>"
@@ -18,7 +18,7 @@
         </span>
         <img alt="<?php echo isset( $attachment ) ? $attachment->alt : '{{alt}}' ?>"
             <?php if ( isset( $attachment ) ) : ?>
-                src="<?php echo $attachment->edit_url ?>"
+                src="<?php echo $attachment->edit_url ? $attachment->edit_url : $attachment->no_thumb_url ?>"
             <?php endif ?>
             style="height: 65px"
         />

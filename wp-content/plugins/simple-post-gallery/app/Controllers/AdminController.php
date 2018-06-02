@@ -72,8 +72,8 @@ class AdminController extends Controller
     {
         add_submenu_page(
             'options-general.php',
-            __( 'Post Gallery Settings', 'post-gallery' ),
-            __( 'Galleries', 'post-gallery' ),
+            __( 'Post Gallery Settings', 'simple-post-gallery' ),
+            __( 'Galleries', 'simple-post-gallery' ),
             'manage_options',
             self::ADMIN_MENU_SETTINGS,
             [ &$this, 'view_settings' ]
@@ -99,9 +99,9 @@ class AdminController extends Controller
             'error'         => Request::input( 'error' ),
             'tab'           => Request::input( 'tab', 'general' ),
             'tabs'          => apply_filters( 'postgallery_settings_tabs', [
-                                'general'   => __( 'General', 'post-gallery' ),
-                                'cache'     => __( '<i class="fa fa-cog" aria-hidden="true"></i> Cache', 'post-gallery' ),
-                                'docs'      => __( '<i class="fa fa-book" aria-hidden="true"></i> Documentation', 'post-gallery' ),
+                                'general'   => __( 'General', 'simple-post-gallery' ),
+                                'cache'     => __( '<i class="fa fa-cog" aria-hidden="true"></i> Cache', 'simple-post-gallery' ),
+                                'docs'      => __( '<i class="fa fa-book" aria-hidden="true"></i> Documentation', 'simple-post-gallery' ),
                             ] ),
             'view'          => $this->view,
             'types'         => get_post_types(
@@ -132,7 +132,7 @@ class AdminController extends Controller
             try {
                 if ( $_POST['submit'] === 'cache.flush' ) {
                     Cache::flush();
-                    return __( 'Cache cleared.', 'post-gallery' );
+                    return __( 'Cache cleared.', 'simple-post-gallery' );
                 }
                 // General tab information
                 $model->can_enqueue         = Request::input( 'can_enqueue', 0 );
@@ -145,7 +145,7 @@ class AdminController extends Controller
                 $model->clear();
 
                 do_action( 'postgallery_settings_saved' );
-                return __( 'Settings saved.', 'post-gallery' );
+                return __( 'Settings saved.', 'simple-post-gallery' );
 
             } catch (Exception $e) {
                 Log::error($e);
@@ -166,12 +166,12 @@ class AdminController extends Controller
     {
         // Copy to clipboard
         $actions['copy'] = [
-            'name'  => __( 'Copy', 'post-gallery' ),
+            'name'  => __( 'Copy', 'simple-post-gallery' ),
             'fa'    => 'fa-files-o',
         ];
         // Append / insert into editor
         $actions['editor'] = [
-            'name'  => __( 'Insert into content (current cursor position)', 'post-gallery' ),
+            'name'  => __( 'Insert into content (current cursor position)', 'simple-post-gallery' ),
             'fa'    => 'fa-sign-in',
         ];
         return $actions;

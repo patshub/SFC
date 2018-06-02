@@ -10,7 +10,7 @@ use WPMVC\MVC\Controller;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.2
+ * @version 2.2.0
  */
 class ConfigController extends Controller
 {
@@ -67,5 +67,26 @@ class ConfigController extends Controller
                 . '</a>'
         ], $links );
     }
-
+    /**
+     * Loads plugin text domain.
+     * @since 2.2.0
+     *
+     * @global object $postgallery Main class.
+     */
+    public function load_textdomain()
+    {
+        global $postgallery;
+        $locale = is_admin() && function_exists( 'get_user_locale' ) ? get_user_locale() : get_locale();
+        $locale = apply_filters( 'plugin_locale', $locale, 'simple-post-gallery' );
+        unload_textdomain( 'simple-post-gallery' );
+        load_textdomain(
+            'simple-post-gallery',
+            WP_LANG_DIR . '/simple-post-gallery/simple-post-gallery-' . $locale . '.mo'
+        );
+        load_plugin_textdomain(
+            'simple-post-gallery',
+            false,
+            plugin_basename( $postgallery->config->get( 'paths.base' ) ) . '/../assets/languages/'
+        );
+    }
 }

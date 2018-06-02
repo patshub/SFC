@@ -15,7 +15,7 @@ use PostGallery\Models\Attachment;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.1
+ * @version 2.2.0
  */
 class VideoController extends Controller
 {
@@ -55,7 +55,7 @@ class VideoController extends Controller
      */
     public function media_tabs( $tabs = [] )
     {
-        $tabs['video_importer'] = __('Import Video', 'post-gallery');
+        $tabs['video_importer'] = __( 'Import Video', 'simple-post-gallery' );
         return $tabs;
     }
     /**
@@ -93,13 +93,13 @@ class VideoController extends Controller
             if ( empty( $input['url'] )
                 || ! preg_match( '/http/', $input['url'] )
             ) {
-                $response->error( 'url', __( 'Invalid value.', 'post-gallery' ) );
-                $response->message = __( 'Url provided appears to be invalid.', 'post-gallery' );
+                $response->error( 'url', __( 'Invalid value.', 'simple-post-gallery' ) );
+                $response->message = __( 'Url provided appears to be invalid.', 'simple-post-gallery' );
             }
             // -- Supported providers
             if ( ! preg_match( apply_filters( 'post_gallery_video_providers_regx', '/youtu|vimeo/' ), $input['url'] ) ) {
-                $response->error( 'url', __( 'Invalid video provider.', 'post-gallery' ) );
-                $response->message = __( 'Video provider not supported.', 'post-gallery' );
+                $response->error( 'url', __( 'Invalid video provider.', 'simple-post-gallery' ) );
+                $response->message = __( 'Video provider not supported.', 'simple-post-gallery' );
             }
             if ( $response->passes ) {
                 $response->data = [
@@ -158,13 +158,13 @@ class VideoController extends Controller
             if ( empty( $input['url'] )
                 || ! preg_match( '/http/', $input['url'] )
             ) {
-                $response->error( 'url', __( 'Invalid value.', 'post-gallery' ) );
-                $response->message = __( 'Url provided appears to be invalid.', 'post-gallery' );
+                $response->error( 'url', __( 'Invalid value.', 'simple-post-gallery' ) );
+                $response->message = __( 'Url provided appears to be invalid.', 'simple-post-gallery' );
             }
             // -- Supported providers
             if ( ! preg_match( apply_filters( 'post_gallery_video_providers_regx', '/youtu|vimeo/' ), $input['url'] ) ) {
-                $response->error( 'url', __( 'Invalid video provider.', 'post-gallery' ) );
-                $response->message = __( 'Video provider not supported.', 'post-gallery' );
+                $response->error( 'url', __( 'Invalid video provider.', 'simple-post-gallery' ) );
+                $response->message = __( 'Video provider not supported.', 'simple-post-gallery' );
             }
             if ( $response->passes ) {
                 $model = apply_filters( 'post_gallery_import_video', new Attachment, $input['url'] );
@@ -271,6 +271,7 @@ class VideoController extends Controller
      * Filter "send_to_editor"
      * Wordpress hook
      * @since 2.1.0
+     * @since 2.2.0 Modify video sends (MP4).
      *
      * @param string $html    Current HTML.
      * @param int    $post_id Attachment ID.
@@ -282,6 +283,8 @@ class VideoController extends Controller
         $attachment = Attachment::find( $post_id );
         if ( $attachment->mime === 'video/youtube' || $attachment->mime === 'video/vimeo' )
             return apply_filters( 'post_gallery_video_to_editor', $attachment->embed, $attachment );
+        if ( $attachment->mime === 'video/mp4' )
+            return preg_replace( '/\]\[/', ' id="'.$attachment->ID.'" img="'.$attachment->video_thumb.'"][', $html );
         return $html;
     }
     /**
@@ -300,17 +303,17 @@ class VideoController extends Controller
         $attachment = Attachment::find( $post->ID );
         if ( $attachment->mime === 'video/youtube' || $attachment->mime === 'video/vimeo' ) {
             $fields['video_provider'] = [
-                'label' => __( 'Provider', 'post-gallery' ),
+                'label' => __( 'Provider', 'simple-post-gallery' ),
                 'input' => 'html',
                 'html'  => '<i class="fa fa-'.($attachment->mime === 'video/youtube' ? 'youtube' : 'vimeo').'" style="font-size: 40px" title="'.$attachment->video_provider.'"></i>',
             ];
             $fields['video_watch'] = [
-                'label' => __( 'Watch', 'post-gallery' ),
+                'label' => __( 'Watch', 'simple-post-gallery' ),
                 'input' => 'html',
-                'html'  => '<a href="'.$attachment->video_url.'" target="_blank">'.__( 'Click to watch', 'post-gallery' ).'</a>',
+                'html'  => '<a href="'.$attachment->video_url.'" target="_blank">'.__( 'Click to watch', 'simple-post-gallery' ).'</a>',
             ];
             $fields['embed_size'] = [
-                'label' => __( 'Embed', 'post-gallery' ),
+                'label' => __( 'Embed', 'simple-post-gallery' ),
                 'input' => 'html',
                 'html'  => $this->view->get( 'media.video-embed-select', ['attachment' => &$attachment, 'post' => &$post]  ),
             ];

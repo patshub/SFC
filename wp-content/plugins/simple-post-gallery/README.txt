@@ -4,8 +4,8 @@ Contributors: 10quality
 Tags: gallery, post gallery, pictures, images, lightbox, customizable, customization, galleries, videos, video gallery, photo gallery, swipebox, youtube, vimeo
 Requires at least: 3.2
 Requires PHP: 5.4
-Tested up to: 4.9.5
-Stable tag: 2.1.8
+Tested up to: 4.9.6
+Stable tag: 2.2.3
 License: MIT
 License URI: http://www.linfo.org/mitlicense.html
 
@@ -36,6 +36,8 @@ Features:
 * Light-box built-in.
 * Use of the newest wordpress media editor to upload and select images.
 * Adds video importer to wordpress media uploader, works all across wordpress.
+* Supports multiple galleries in display.
+* Supports uploaded MP4 videos (without light-box).
 
 This plugin is very developer friendly, has many hooks that will let you extend and customize its functionality to meet your needs. Optionally we offer a pro extension with the following features:
 
@@ -54,6 +56,28 @@ You can opt to obtain these features [here](https://www.10quality.com/product/po
 4. Configure the plugin at "Settings->Galleries".
 
 == Changelog ==
+
+= 2.2.3 =
+*Release Date - 29 May 2018*
+
+* Fixes video bug generated on version 2.2.1.
+
+= 2.2.2 =
+*Release Date - 28 May 2018*
+
+* Shortcode now supports post ID as attribute (Ability to display multiple galleries in a post).
+
+= 2.2.1 =
+*Release Date - 26 May 2018*
+
+* Uploaded MP4 support added (without light-box).
+* Loader displayed when media is being added to gallery.
+
+= 2.2.0 =
+*Release Date - 23 May 2018*
+
+* Localization supported (via Wordpress.org).
+* Deprecated Lightbox2 notice removed.
 
 = 2.1.8 =
 *Release Date - 6 April 2018*
@@ -193,6 +217,16 @@ Any greater or equal to **5.4** is supported.
 = Issues when migrating wordpress? =
 
 Clear plugin's cache.
+
+= How to display more than one gallery? =
+
+Use shortcode's ID attribute/parameter to display multiple galleries. The ID refers to the post ID holding the gallery.
+
+Example: [post_gallery id=99] [post_gallery id=399]
+
+= How to use a different lightbox? =
+
+This [tutorial](https://www.10quality.com/2018/05/29/how-to-change-th…-in-post-gallery/ ) explains how.
 
 == Who do I thank for all of this? ==
 

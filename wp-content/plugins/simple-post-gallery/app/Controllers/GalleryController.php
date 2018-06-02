@@ -15,7 +15,7 @@ use PostGallery\Models\PostGallery;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.5
+ * @version 2.2.2
  */
 class GalleryController extends Controller
 {
@@ -53,6 +53,7 @@ class GalleryController extends Controller
      * @since 2.0.0 WPMVC compatibility, format customization.
      * @since 2.1.2 Adds gallery scripta and swipebox support.
      * @since 2.1.5 Hot fix to allow PHP 5.4 compatibility.
+     * @since 2.2.2 Checks for shortcode attributes.
      *
      * @param mixed $post_id Post ID.
      */
@@ -60,8 +61,13 @@ class GalleryController extends Controller
     {
         try
         {
+            // Direct parameter
             if ( empty( $post_id ) )
                 $post_id = get_the_ID();
+            // ID parameter from shortcode attributes.
+            if ( is_array( $post_id ) )
+                $post_id = isset( $post_id['id'] ) ? $post_id['id'] : get_the_ID();
+            // Prepare
             $post = call_user_func_array(
                 [apply_filters( 'post_gallery_model_class', '\PostGallery\Models\Post' ), 'find'],
                 [$post_id]
@@ -109,7 +115,7 @@ class GalleryController extends Controller
             return;
         add_meta_box( 
             '10q-post-gallery',
-            __( 'Gallery', 'post-gallery' ),
+            __( 'Gallery', 'simple-post-gallery' ),
             [ &$this, 'metabox' ],
             $post_type,
             $post_gallery->metabox_context ? $post_gallery->metabox_context : 'advanced',
@@ -148,7 +154,7 @@ class GalleryController extends Controller
         $this->view->show( 'plugins.post-gallery.admin.metaboxes.gallery', [
             'post'          => $model,
             'view'          => $this->view,
-            'formats'       => apply_filters( 'postgallery_formats', ['default' => __( 'Thumbnails', 'post-gallery' ) ] ),
+            'formats'       => apply_filters( 'postgallery_formats', ['default' => __( 'Thumbnails', 'simple-post-gallery' ) ] ),
         ] );
     }
     /**
@@ -196,7 +202,7 @@ class GalleryController extends Controller
 
             // Data
             $data = $post->format_data;
-            foreach ( apply_filters( 'postgallery_formats', ['default' => __( 'Thumbnails', 'post-gallery' ) ] ) as $format => $title ) { 
+            foreach ( apply_filters( 'postgallery_formats', ['default' => __( 'Thumbnails', 'simple-post-gallery' ) ] ) as $format => $title ) { 
                 $data[$format] = apply_filters(
                     'postgallery_save_format_'.$format,
                     isset( $data[$format] ) ? $data[$format] : [],

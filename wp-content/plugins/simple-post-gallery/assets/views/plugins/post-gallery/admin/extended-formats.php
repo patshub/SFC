@@ -8,7 +8,7 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.4
+ * @version 2.2.0
  */ 
 ?>
 <label id="extended-1" class="format format-extended extended-content">
@@ -16,16 +16,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/thumb-slider.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Thumb Slider', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Thumb Slider', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Thumb Slider', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Thumb Slider', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -35,16 +35,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/slider.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Slider', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Slider', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Slider', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Slider', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -54,16 +54,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/slider-sync.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Slider Sync', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Slider Sync', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Slider Sync', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Slider Sync', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -73,16 +73,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/slider-sync-inverted.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Slider Sync 2', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Slider Sync 2', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Slider Sync 2', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Slider Sync 2', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -92,16 +92,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/vertical.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Vertical', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Vertical', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Vertical', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Vertical', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -111,16 +111,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/vertical-left.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Vertical Left', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Vertical Left', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Vertical Left', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Vertical Left', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>
@@ -130,16 +130,16 @@
     <span class="icon">
         <span class="extended">
             <i class="fa fa-star"></i> 
-            <?php _e( 'PRO', 'post-gallery' ) ?>
+            <?php _e( 'PRO', 'simple-post-gallery' ) ?>
         </span>
         <a href="https://www.10quality.com/product/post-gallery-pro/" target="_blank">
             <img src="<?php echo assets_url( 'svgs/vertical-right.svg', __FILE__ ) ?>"
-                alt="<?php _e( 'Vertical Right', 'post-gallery' ) ?>"
+                alt="<?php _e( 'Vertical Right', 'simple-post-gallery' ) ?>"
                 class="img-responsive"
             />
         </a>
         <span class="title">
-            <span class="format-name"><?php _e( 'Vertical Right', 'post-gallery' ) ?></span>
+            <span class="format-name"><?php _e( 'Vertical Right', 'simple-post-gallery' ) ?></span>
             <span class="format-enable"><i class="fa fa-arrow-circle-o-right"></i> <?php _e( 'Enable' ) ?></span>
         </span>
     </span>

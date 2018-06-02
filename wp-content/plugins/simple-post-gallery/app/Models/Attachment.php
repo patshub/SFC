@@ -15,7 +15,7 @@ use WPMVC\MVC\Models\Common\Attachment as Model;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality
  * @package PostGallery
- * @version 2.1.0
+ * @version 2.2.1
  */
 class Attachment extends Model
 {
@@ -26,6 +26,8 @@ class Attachment extends Model
      * @since 1.0.1 Added title, date and mime
      * @since 2.0.0 Following parent.
      * @since 2.1.0 Added embed for video.
+     * @since 2.2.0 Added video_thumb.
+     * @since 2.2.1 Added is_lightbox and no_thumb_url.
      * @var array
      */
     protected $aliases = [
@@ -47,10 +49,15 @@ class Attachment extends Model
         'video_id'          => 'meta_video_id',
         'video_url'         => 'meta_video_url',
         'video_provider'    => 'meta_video_provider',
+        'is_lightbox'       => 'func_get_is_lightbox',
+        'video_thumb'       => 'func_get_video_thumb',
+        'no_thumb_path'     => 'func_get_no_thumb_path',
+        'no_thumb_url'      => 'func_get_no_thumb_url',
     ];
     /**
      * Hidden attributes in Array and JSON casting.
      * @since 2.0.0
+     * @since 2.2.1 Added is_lightbox, video_thumb and no_thumb_url.
      * @var array
      */
     protected $hidden = [
@@ -81,6 +88,10 @@ class Attachment extends Model
         'page_template',
         'post_category',
         'tags_input',
+        'is_lightbox',
+        'video_thumb',
+        'no_thumb_path',
+        'no_thumb_url',
     ];
     /**
      * Returns image with proper edit resolution.
@@ -116,12 +127,16 @@ class Attachment extends Model
     /**
      * Returns flag indicating if attachement is a supported video.
      * @since 2.1.0
+     * @since 2.2.1 Added video/mp4.
      *
      * @return bool
      */
     protected function get_is_video()
     {
-        return in_array( $this->mime , apply_filters( 'post_gallery_video_mimes', ['video/youtube', 'video/vimeo'] ) );
+        return in_array( $this->mime , apply_filters(
+            'post_gallery_video_mimes',
+            ['video/youtube', 'video/vimeo', 'video/mp4']
+        ) );
     }
     /**
      * Returns mime type.
@@ -138,6 +153,7 @@ class Attachment extends Model
     /**
      * Returns attachment url at a specified resolution.
      * @since 2.0.0
+     * @since 2.2.1 Support for no thumb media.
      *
      * @param int  $width  Resolution width.
      * @param int  $height Resolution height.
@@ -148,7 +164,7 @@ class Attachment extends Model
      */
     public function get_res( $width, $height, $crop = true, $cache = true )
     {
-        $path = $this->path;
+        $path = $this->thumb_url ? $this->path : $this->no_thumb_path;
         $ID = $this->ID;
         if ( $cache === false ) {
             try {
@@ -182,5 +198,48 @@ class Attachment extends Model
                 return;
             }
         );
+    }
+    /**
+     * Returns video thumbnail URL (for uploaded MP4).
+     * @since 2.2.0
+     *
+     * @return string
+     */
+    public function get_video_thumb()
+    {
+        return assets_url( 'images/default-video.jpg', __DIR__ );
+    }
+    /**
+     * Returns flag indicating if media is supported by lightbox solution.
+     * @since 2.2.1
+     *
+     * @return bool
+     */
+    public function get_is_lightbox()
+    {
+        return $this->mime !== 'video/mp4';
+    }
+    /**
+     * Returns path to where video thumb is located.
+     * @since 2.2.1
+     *
+     * @global object $postgallery Main class.
+     *
+     * @return string
+     */
+    public function get_no_thumb_path()
+    {
+        global $postgallery;
+        return $postgallery->config->get( 'paths.base' ).'../assets/images/default-video.jpg';
+    }
+    /**
+     * Returns no thumb image url.
+     * @since 2.2.1
+     *
+     * @return string
+     */
+    public function get_no_thumb_url()
+    {
+        return $this->get_res( get_option( 'thumbnail_size_w' ), get_option( 'thumbnail_size_h' ) );
     }
 }

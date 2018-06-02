@@ -3,11 +3,12 @@
 Plugin Name: Post Gallery
 Plugin URI: https://www.10quality.com/product/post-gallery-plugin/
 Description: Adds Gallery of pictures and photos to any post type. Developed for easy customization in themes.
-Version: 2.1.8
+Version: 2.2.3
 Author: 10 Quality
 Author URI: https://www.10quality.com/
 License: MIT
-Text Domain: post-gallery
+Text Domain: simple-post-gallery
+Domain Path: /assets/languages/
 
 Copyright (c) 2018 10Quality - http://www.10quality.com
 

@@ -8,7 +8,7 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.3
+ * @version 2.2.3
  */ 
 ?>
 <style type="text/css">
@@ -22,11 +22,13 @@
 <div class="post-gallery">
     <?php foreach ( $post->gallery as $attachment ) : ?>
         <a href="<?php echo $attachment->is_video ? $attachment->video_url : $attachment->url ?>"
-            class="swipebox <?php if ( $attachment->is_video ) : ?>is-video<?php endif ?>"
-            rel="post-gallery-<?php echo $post->ID ?>"
+            class="<?php if ( $attachment->is_lightbox ) : ?>swipebox<?php endif ?> <?php if ( $attachment->is_video ) : ?>is-video<?php endif ?>"
+            <?php if ( $attachment->is_lightbox ) : ?>
+                rel="post-gallery-<?php echo $post->ID ?>"
+            <?php endif ?>
             title="<?php echo $attachment->caption ?>"
         >
-            <img src="<?php echo $attachment->thumb_url ?>"
+            <img src="<?php echo $attachment->thumb_url ? $attachment->thumb_url : $attachment->no_thumb_url ?>"
                 alt="<?php echo $attachment->alt ?>"
             />
         </a>

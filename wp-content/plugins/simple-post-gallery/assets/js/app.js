@@ -5,7 +5,7 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality
  * @package PostGallery
- * @version 2.1.8
+ * @version 2.2.1
  */
 (function($) {
 
@@ -23,12 +23,17 @@
          * - postGallery_* (if needed)
          * @since 1.0.0
          * @since 1.0.4 Adds window variable(s) and refactors name.
+         * @since 2.2.1 Hide uploader on upload completion.
          */
         $('.gallery-uploader').each(function(i) {
             window['postGallery'+(i === 0 ? '' : '_'+i)] = $(this).mediaUploader({
                 editor: $(this).data('editor'),
                 target: $(this).data('target'),
                 clearTarget: $(this).data('clearTarget') | false,
+                success: function() {
+                    // Hide uploader
+                    $('#post-gallery').find('.media-loader').hide();
+                },
             });
         });
 
@@ -108,6 +113,23 @@
         $('#post-gallery .action-editor').click(function(e) {
             e.preventDefault();
             window.send_to_editor($('#post-gallery-shortcode').text());
+        });
+
+
+        /**
+         * Show media loader.
+         * @since 2.2.1
+         */
+        $('#post-gallery .insert-media').click(function() {
+            $('#post-gallery').find('.media-loader').show();
+        });
+
+        /**
+         * Hide media loader on media modal close.
+         * @since 2.2.1
+         */
+        $(document).on('click', '.media-modal-close', function() {
+            $('#post-gallery').find('.media-loader').hide();
         });
     });
 

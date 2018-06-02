@@ -11,7 +11,7 @@ use WPMVC\MVC\Controller;
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality
  * @package PostGallery
- * @version 2.1.2
+ * @version 2.2.0
  */
 class NoticeController extends Controller
 {
@@ -33,11 +33,15 @@ class NoticeController extends Controller
      * Action "admin_notices"
      * Wordpress hook
      * @since 2.1.2
+     * @since 2.2.0 Removed notice 0.
      */
     public function show()
     {
+        /*
         if ( get_option( 'postgallery_notice_0_show', true ) ) {
             $this->view->show( 'plugins.post-gallery.admin.notices.lightbox-notice' );
         }
+        */
+        // TODO future notices
     }
 }

@@ -15,7 +15,7 @@
 <section id="prayers-list" class="bg white">
   <div class="container">
     <div class="columns">
-      <h2 class="section-title">Prayers Intentions</h2>
+      <h2 class="section-title">Intentions</h2>
 
       <div class="col-6">
         <div class="col">

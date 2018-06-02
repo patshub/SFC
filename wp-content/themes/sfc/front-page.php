@@ -58,7 +58,7 @@
     <div class="container">
       <div class="headline">
         <h2 class=" ">
-          <span class="subtitle">What We Do</span>
+          <span class="subtitle">WHAT WE DO</span>
           Deepen Your Relationship With God</h2>
         <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
       </div>
@@ -76,7 +76,7 @@
           <div class="col">
             <div class="img"></div>
             <div class="info">
-              <h4>Households</h4>
+              <h4>Teaching Nights</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
             </div>
           </div>
@@ -85,7 +85,7 @@
           <div class="col">
             <div class="img"></div>
             <div class="info">
-              <h4>Households</h4>
+              <h4>Retreats</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
             </div>
           </div>
@@ -94,12 +94,17 @@
           <div class="col">
             <div class="img"></div>
             <div class="info">
-              <h4>Households</h4>
+              <h4>Conferences</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section id="word-message">
+    <div class="">
+      <div class="word-art" style="width: 100%; height: 400px;" data-wordart-src="//cdn.wordart.com/json/haqwkgk45wc4" data-wordart-show-attribution></div>
     </div>
   </section>
   <section id="clp-home">
@@ -113,8 +118,8 @@
     </div>
   </section>
 
-  <section>
-    <div class="container" id="ancop-home">
+  <section id="ancop-home">
+    <div class="container">
       <div class="col-6">
       </div>
       <div class="col-6">

@@ -1,1 +1,1 @@
-a:4:{s:5:"value";s:69:"http://localhost:8888/sfc/wp-content/uploads/2018/05/17-4-150x150.png";s:10:"write_time";i:1526794330;s:10:"expired_in";i:2592000;s:12:"expired_time";i:1529386330;}
+a:4:{s:5:"value";s:69:"http://localhost:8888/sfc/wp-content/uploads/2018/06/17-4-150x150.png";s:10:"write_time";i:1527966468;s:10:"expired_in";i:2592000;s:12:"expired_time";i:1530558468;}

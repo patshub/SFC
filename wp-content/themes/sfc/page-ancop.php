@@ -12,7 +12,7 @@
       </div>
       <div class="col-6">
         <h2>What is ANCOP?</h2>
-        <p>ANCOP, acronym which stands for Answering the Cry of the Poor is a Christian, Catholic non-profit organization that dedicates itself to proclaiming CHRIST, and the Christian faith, by uplifting the plight of the poor.</p>
+        <p>ANCOP, an acronym which stands for Answering the Cry of the Poor is a Christian, Catholic non-profit organization that dedicates itself to proclaiming CHRIST, and the Christian faith, by uplifting the plight of the poor.</p>
       </div>
       <div class="col-2">
       </div>

@@ -1,48 +1,54 @@
 <?php include 'header.php'; ?>
 <?php include 'header-special.php'; ?>
 
+
   <section id="photo-albums" class="bg white">
     <div class="container">
 
-        <h2 class="section-title">
-          <span class="subtitle">Christ-Centered Memories</span>
-          Photo Albums
-        </h2>
+      <script>
+        $(document).ready(function(){
+          $('.photo-album-collection').bxSlider({
+            infiniteLoop: false,
+            hideControlOnEnd: true,
+            pager: false,
+            nextText: "Next Album",
+            prevText: "Previous Album",
+            adaptiveHeight: true
+          });
+        });
+      </script>
+
+      <h2 class="media-title" style="margin-bottom:10px;">Photos</h2>
+
         <?php
         $paged = get_query_var( 'paged' );
         $args = array(
           'posts_per_page' => 6,
-          'post_type'   => 'photos',
-          'paged' => $paged
+          'post_type'   => 'photos'
         );
         $photos = new WP_Query( $args );
         if ( $photos->have_posts() ) { ?>
-        <div class="columns col-max">
+        <div class="photo-album-collection">
           <?php	while ( $photos->have_posts() ) { $photos->the_post(); ?>
-          <div class="col-4">
-            <div class="col">
-              <?php if ( has_post_thumbnail() ) : ?>
-                <a href="<?php the_permalink(); ?>">
-                  <div class="img" style="background-image:url('<?php echo get_the_post_thumbnail_url(get_the_ID(),'full'); ?>');">
-                    <div class="info">
-                      <h4><?php the_title(); ?></h4>
-                      <span class="post-date excerpt"><?php echo get_the_date('F j, Y'); ?></span>
-                      <?php if(has_excerpt()){ ?>
-                        <span class="excerpt"><?php the_excerpt(25); ?></span>
-                      <?php } ?>
+            <div>
+              <div class="photo-album-headline">
+                <h3 class="section-title">
+                  <?php the_title();?>
+                </h3>
+              </div>
+              <div class="columns">
+                <?php foreach ( get_gallery() as $attachment ) : ?>
+                  <div class="col-4">
+                    <div class="col">
+                      <a class="swipebox" data-lightbox="post-gallery-<?php echo $post->ID ?>" href="<?php echo $attachment->large_url ?>" title="<?php the_title_attribute(); ?>"><div class="img" style="background-image:url('<?php echo $attachment->large_url ?>');"></div></a>
                     </div>
                   </div>
-                </a>
-              <?php endif; ?>
+                <?php endforeach; ?>
+              </div>
             </div>
-          </div>
           <?php } wp_reset_postdata(); ?>
         </div>
-        <?php echo paginate_links(array(
-          'total' => $photos->max_num_pages
-        ));
-      } else { // no posts found
-        } ?>
+        <?php } else { } ?>
     </div>
   </section>
   <script>
@@ -54,16 +60,18 @@
     });
   </script>
 
-  <section id="video-playlist" class="bg grey">
+  <section id="video-playlist" class="">
     <div class="container">
-      <h2 class="section-title">
+      <!-- <h2 class="section-title align-center">
         <span class="subtitle">Revisiting the Experience</span>
-        Video Playlist
-      </h2>
+        <strong>Video Playlist</strong>
+      </h2> -->
+      <h2 class="media-title">Videos</h2>
 
       <script>
         $(document).ready(function(){
           $('#video-playlist .video-slider').bxSlider({
+            controls: false,
             infiniteLoop: false,
             hideControlOnEnd: true,
             buildPager: function(slideIndex){
@@ -99,7 +107,7 @@
           <div class="video-slider">
             <?php	while ( $videos->have_posts() ) { $videos->the_post(); ?>
               <div>
-                <iframe allowfullscreen width="100%" height="420px" src="https://www.youtube.com/embed/<?php if(get_field('youtube_code')): ?><?php the_field('youtube_code'); ?><?php endif; ?>"></iframe>
+                <iframe allowfullscreen width="100%" height="350px" src="https://www.youtube.com/embed/<?php if(get_field('youtube_code')): ?><?php the_field('youtube_code'); ?><?php endif; ?>"></iframe>
                 <div class="info">
                   <h3><?php the_title(); ?></h3>
                   <span class="post-date excerpt"><?php echo get_the_date('F j, Y'); ?></span>
@@ -113,12 +121,13 @@
     </div>
   </section>
 
-  <section class="bg white">
+  <section class="">
     <div class="container">
-      <h2 class="section-title">
+      <!-- <h2 class="section-title align-center">
         <span class="subtitle">Praise and Worship</span>
-        Music Playlist
-      </h2>
+        <strong>Music Playlist</strong>
+      </h2> -->
+      <h2 class="media-title">Music</h2>
         <div>
         <?php
         $args = array(

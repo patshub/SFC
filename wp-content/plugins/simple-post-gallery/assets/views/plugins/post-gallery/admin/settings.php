@@ -5,19 +5,19 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 1.0.3
+ * @version 2.2.0
  */ 
 ?>
 <?php use PostGallery\Controllers\AdminController as Software ?>
 <div class="wrap">
 
-    <h2><?php _e( 'Post Gallery Settings', 'post-gallery' ) ?></h2>
+    <h2><?php _e( 'Post Gallery Settings', 'simple-post-gallery' ) ?></h2>
 
     <?php if ( $notice ) : ?>
         <div id="setting-error-settings_updated" class="updated settings-error notice is-dismissible"> 
             <p><strong><?php echo $notice ?></strong></p>
             <button type="button" class="notice-dismiss">
-                <span class="screen-reader-text"><?php _e( 'Dismiss this notice.', 'post-gallery' ) ?></span>
+                <span class="screen-reader-text"><?php _e( 'Dismiss this notice.', 'simple-post-gallery' ) ?></span>
             </button>
         </div>
     <?php endif ?>
@@ -26,7 +26,7 @@
         <div id="setting-error-settings_updated" class="error settings-error notice is-dismissible"> 
             <p><strong><?php echo $error ?></strong></p>
             <button type="button" class="notice-dismiss">
-                <span class="screen-reader-text"><?php _e( 'Dismiss this notice.', 'post-gallery' ) ?></span>
+                <span class="screen-reader-text"><?php _e( 'Dismiss this notice.', 'simple-post-gallery' ) ?></span>
             </button>
         </div>
     <?php endif ?>

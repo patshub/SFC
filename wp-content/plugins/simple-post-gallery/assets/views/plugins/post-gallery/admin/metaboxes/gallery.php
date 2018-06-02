@@ -5,7 +5,7 @@
  * @author Alejandro Mostajo <http://about.me/amostajo>
  * @copyright 10Quality <http://www.10quality.com>
  * @package PostGallery
- * @version 2.1.8
+ * @version 2.2.1
  */
 ?>
 <?php use PostGallery\Controllers\AdminController as Software ?>
@@ -18,10 +18,15 @@
                 data-editor="post-gallery"
                 class="button insert-media"
             >
-                <i class="fa fa-picture-o" aria-hidden="true"></i> <?php _e( 'Add Media', 'post-gallery' ) ?>
+                <i class="fa fa-picture-o" aria-hidden="true"></i> <?php _e( 'Add Media', 'simple-post-gallery' ) ?>
             </a>
         <?php endif ?>
         <?php do_action( 'post_gallery_metabox_header' ) ?>
+        <?php if ( apply_filters( 'post_gallery_metabox_loader', true ) ) : ?>
+            <span class="media-loader" style="display:none">
+                <i class="fa fa-circle-o-notch fa-spin" aria-hidden="true"></i>
+            </span>
+        <?php endif ?>
     </div>
 
     <!-- Caller -->
@@ -51,7 +56,7 @@
         <div class="formats">
             <?php if ( apply_filters( 'post_gallery_metabox_formats_header_show', true ) ) : ?>
                 <div class="formats-header heading">
-                    <?php _e( 'Formats and layouts', 'post-gallery' ) ?>
+                    <?php _e( 'Formats and layouts', 'simple-post-gallery' ) ?>
                     <?php do_action( 'post_gallery_metabox_formats_header' ) ?>
                 </div>
             <?php endif ?>
@@ -103,15 +108,15 @@
     <div class="footer">
         <?php if ( apply_filters( 'post_gallery_metabox_templates_link', true ) ) : ?>
             <span class="pull-left">
-                <?php _e( 'Display in', 'post-gallery' ) ?>
+                <?php _e( 'Display in', 'simple-post-gallery' ) ?>
                 <a href="<?php echo admin_url( 'options-general.php?page=' . Software::ADMIN_MENU_SETTINGS . '&tab=docs' ) ?>"
-                ><?php _e( 'templates', 'post-gallery' ) ?></a><?php _e( '?', 'post-gallery' ) ?>
+                ><?php _e( 'templates', 'simple-post-gallery' ) ?></a><?php _e( '?', 'simple-post-gallery' ) ?>
             </span>
         <?php endif ?>
         <?php if ( apply_filters( 'post_gallery_metabox_shortcode_code', true ) ) : ?>
             <span class="pull-right">
-                <?php _e( 'Shortcode:', 'post-gallery' ) ?>
-                <code id="post-gallery-shortcode"><?php _e( '[post_gallery]', 'post-gallery' ) ?></code>
+                <?php _e( 'Shortcode:', 'simple-post-gallery' ) ?>
+                <code id="post-gallery-shortcode">[post_gallery]</code>
                 <?php if ( apply_filters( 'post_gallery_metabox_shortcode_options', true ) ) : ?>
                     <span class="shortcode-actions">
                         <?php foreach ( apply_filters( 'post_gallery_metabox_shortcode_actions', [] ) as $key => $attributes ) : ?>
