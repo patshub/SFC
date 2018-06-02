@@ -523,7 +523,7 @@ span.label-southbay{
   /* color: rgba(255,255,255,.65); */
   color: #0095da;
   margin-bottom: -10px;
-  margin-top: 10px;
+  margin-top: 15px;
   font-family: 'Dancing Script';
   font-size: 34px;
   text-transform: capitalize;
@@ -945,6 +945,7 @@ footer .bibleVerse a{
   margin: 0 7.5px;
   color: #000;
   transition-duration: .2s;
+  font-weight: 400;
 }
 .other-media-title:hover{
   color: #0095da;
@@ -963,6 +964,9 @@ footer .bibleVerse a{
 }
 #photo-albums .photo-album-headline{
   margin-bottom: 30px;
+}
+#photo-albums .photo-album-headline h3{
+  font-weight: 600;
 }
 #photo-albums h2{
   text-align: center;

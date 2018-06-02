@@ -103,8 +103,19 @@
     </div>
   </section>
   <section id="word-message">
-    <div class="">
-      <div class="word-art" style="width: 100%; height: 400px;" data-wordart-src="//cdn.wordart.com/json/haqwkgk45wc4" data-wordart-show-attribution></div>
+    <div class="container">
+      <div class="col-6">
+        <div class="col">
+          <h2>We Live a Christ-Centered Life</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <div class="word-art" style="width: 100%; height: 400px;" data-wordart-src="//cdn.wordart.com/json/haqwkgk45wc4" data-wordart-show-attribution></div>
+        </div>
+      </div>
+
     </div>
   </section>
   <section id="clp-home">
