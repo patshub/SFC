@@ -1,14 +1,28 @@
 $( document ).ready(function() {
+  $(window).on('load resize', function(){
+    var win = $(this);
+    if (win.width() > 500) {
+         $('#clp-modules .dropdown-title').css('min-height', 0);
+         var maxHeight = Math.max.apply(null, $("#clp-modules .dropdown-title").map(function ()
+         {
+              return $(this).height();
+         }).get());
+         $('#clp-modules .dropdown-title').css('min-height', maxHeight+5);
+    } else {
+         $('#clp-modules .dropdown-title').css('min-height', 0);
+    }
+   });
+
   $('#featured-btns .featured-btn').css('height',$('#featured-btns .featured-btn').width());
 
   // Faq Item Dropdown
-  $('.faq-item').click(function(){
+  $('.dropdown-item').click(function(){
     if($(this).hasClass('open')){
-      $(this).children('p').slideToggle('fast');
+      $(this).children('.dropdown-content').slideToggle('fast');
       $(this).removeClass('open');
     }
     else{
-      $(this).children('p').slideToggle('fast');
+      $(this).children('.dropdown-content').slideToggle('fast');
       $(this).addClass('open');
     }
   });
