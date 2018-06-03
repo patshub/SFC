@@ -76,6 +76,9 @@ section{
 .container{
   width: 960px;
   margin: auto;
+
+  position: relative;
+  z-index: 3;
 }
 
 [class*='col-']{

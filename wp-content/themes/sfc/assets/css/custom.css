@@ -7,6 +7,9 @@
 
   height: 250px;
 }
+.img-group .img{
+  margin-bottom: 35px;
+}
 h2.section-title{
   margin: 0 0 30px 0;
 }
@@ -395,7 +398,7 @@ span.label-southbay{
   margin-top: 20px;
 }
 #ancop-home .col-6 .col{
-  padding-top: 45px;
+  padding-top: 35px;
 }
 #ancop-home p{
   margin:.75em 0;
@@ -963,7 +966,7 @@ footer .bibleVerse a{
   transition-duration: 0.2s;
 }
 #photo-albums .photo-album-headline{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 #photo-albums .photo-album-headline h3{
   font-weight: 600;
@@ -1207,7 +1210,7 @@ footer .bibleVerse a{
   background-image: url('../images/bg-news.png')!important;
 }
 #page-header.archive-articles .dimmer{
-  opacity: .6;
+  opacity: .7;
 }
 
 /* Article Node Page */
@@ -1216,13 +1219,17 @@ footer .bibleVerse a{
   background-position: 0 45%;
 }
 #node.articles #page-header .dimmer{
-  opacity: .6;
+  opacity: .7;
 }
 
 
 /* Word Art */
 #word-message{
+  padding: 45px 0;
   margin: 0;
+}
+#word-message .msg{
+
 }
 .wordart-attribution{
   display: none;
@@ -1233,8 +1240,6 @@ footer .bibleVerse a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  padding: 45px 0!important;
   box-sizing: border-box;
 }
 .wordart-canvas{

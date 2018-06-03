@@ -38,7 +38,7 @@
       </div>
     </div>
     <?php if($post_slug == 'media') { ?>
-      <video autoplay muted loop class="bg-video" width="100%" height="420px">
+      <video autoplay loop class="bg-video" width="100%" height="420px">
         <source src="<?php bloginfo('template_url'); ?>/assets/videos/touch-the-sky.mp4"/>
       </video>
       <style>#page-header{background-image: none!important;}#page-header .dimmer{opacity: .3;}</style>

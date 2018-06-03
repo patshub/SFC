@@ -1,6 +1,7 @@
 <?php include 'header.php'; ?>
 <?php include 'header-special.php'; ?>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <style>.dimmer{opacity: .6;}</style>
 <section class="bg white">
   <div class="container">
     <h2>What is SFC?</h2>
@@ -21,8 +22,38 @@
   </div>
 </section>
 
-<div class="standalone-img">
-</div>
+<section class="img-group">
+  <div class="container">
+    <div class="columns">
+      <div class="col-6">
+        <div class="col">
+          <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference.jpg');">
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference-2.jpg');">
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference-3.jpg');">
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="col">
+          <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference-4.jpg');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="standalone-img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference.jpg');"></div> -->
 
 <section id="mission-vision" class="bg lightblue-img">
   <div class="container">
@@ -65,22 +96,15 @@
   </div>
 </section>
 
-<section id="join-us" class="bg blue-img">
+<section id="join-us" class="bg" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/bg-clp-greyscale.png');">
   <div class="container">
-    <div class="col-6">
-      <div class="col">
-        <h2><span class="subtitle">Join Us</span>Christian Life Program</h2>
-        <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
-        <a href="/sfc/clp#register-clp" class="btn white hover-white inline">Register</a> <a href="/sfc/clp" class="btn hover-white inline">Learn More</a>
-      </div>
-    </div>
-
-    <div class="col-6">
-      <div class="col">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/bg-clp.png"/>
-      </div>
+    <div class="mid-col">
+      <h2><span class="subtitle">Join Us</span>Christian Life Program</h2>
+      <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
+      <a href="/sfc/clp#register-clp" class="btn white hover-white inline">Register</a> <a href="/sfc/clp" class="btn hover-white inline">Learn More</a>
     </div>
   </div>
+  <div class="dimmer"></div>
 </section>
 <?php endwhile; else: ?>
 <p>Sorry, no posts matched your criteria.</p>

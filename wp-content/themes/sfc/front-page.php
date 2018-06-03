@@ -102,9 +102,9 @@
       </div>
     </div>
   </section>
-  <section id="word-message">
+  <section id="word-message" style="display:none">
     <div class="container">
-      <div class="col-6">
+      <div class="col-6 msg">
         <div class="col">
           <h2>We Live a Christ-Centered Life</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
