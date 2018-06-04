@@ -72,7 +72,7 @@
   </div>
 </section>
 
-<section id="prayer-form" class="bg blue-img">
+<section id="prayer-form" class="bg blue-img dark">
   <div class="container">
     <div class="mid-col">
         <h2>Make a Prayer Intention</h2>

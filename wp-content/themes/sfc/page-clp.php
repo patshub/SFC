@@ -5,9 +5,12 @@
 <section class="bg blue-img">
   <div class="container">
     <div class="mid-col">
-      <h2>What is CLP?</h2>
-      <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
-      <a href="#register-clp" class="btn white hover-white">Register</a>
+      <div class="headline">
+        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-white-cross.svg" class="logo"/>
+        <h2>What is CLP?</h2>
+        <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
+        <a href="#register-clp" class="btn hover-white">Register</a>
+      </div>
     </div>
   </div>
 </section>
@@ -19,22 +22,22 @@
     <div class="columns col-max">
       <div class="col-4">
         <div class="col">
-          <a href="#"><div class="img"></div></a>
-          <p>Bring the participant to repentance and a renewed faith in Jesus</p>
+          <div class="img bw" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/repentance.jpg');"></div>
+          <div class="info"><h4>Bring the participant to repentance and a renewed faith in Jesus</h4></div>
 
         </div>
       </div>
       <div class="col-4">
         <div class="col">
-          <a href="#"><div class="img"></div></a>
-          <p>Empower the participant in the Christian life through baptism in the Holy Spirit</p>
+          <div class="img bw" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/teaching.jpg');"></div>
+          <div class="info"><h4>Empower the participant in the Christian life through baptism in the Holy Spirit</h4></div>
 
         </div>
       </div>
       <div class="col-4">
         <div class="col">
-          <a href="#"><div class="img"></div></a>
-          <p>Integrate the participant into a strong environment of support and ongoing formation</p>
+          <div class="img bw" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/support.jpg');"></div>
+          <div class="info"><h4>Integrate the participant into a strong environment of support and ongoing formation</h4></div>
 
         </div>
       </div>
@@ -48,16 +51,14 @@
   <div class="container">
     <div class="col-6">
       <h2 class="no-margin">What to Expect</h2>
-      <p>The CLP starts with an orientation session, then goes into 3 modules of four talk sessions each. Each session consists of three basic ingredients: teaching, group discussion, and fellowship.</p>
+      <p>The CLP starts with an orientation session, then goes into 3 modules of four talk sessions each.</p>
     </div>
 
     <div class="module">
       <div class="col-4">
         <div class="col">
-          <h3>
-            <strong class="module-number">Module 1</strong>
-            The Basic Truths About Christianity
-          </h3>
+          <strong class="module-number">Module 1</strong>
+          <h3>The Basic Truths About Christianity</h3>
         </div>
       </div>
       <div class="col-8">
@@ -101,10 +102,8 @@
     <div class="module">
       <div class="col-4">
         <div class="col">
-          <h3>
-            <strong class="module-number">Module 2</strong>
-            The Authentic Christian Life
-          </h3>
+          <strong class="module-number">Module 2</strong>
+          <h3>The Authentic Christian Life</h3>
         </div>
       </div>
       <div class="col-8">
@@ -148,10 +147,8 @@
     <div class="module">
       <div class="col-4">
         <div class="col">
-          <h3>
-            <strong class="module-number">Module 3</strong>
-            Living a Spirit-Filled Christian Life
-          </h3>
+          <strong class="module-number">Module 3</strong>
+          <h3>Living a Spirit-Filled Christian Life</h3>
         </div>
       </div>
       <div class="col-8">
@@ -194,7 +191,7 @@
   </div>
 </div>
 
-<section id="register-clp" class="bg blue-img">
+<section id="register-clp" class="bg blue-img dark">
   <div class="container">
     <div class="mid-col">
       <h2><strong>Register</strong></h2>

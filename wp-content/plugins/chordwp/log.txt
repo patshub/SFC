@@ -1362,3 +1362,15 @@ Failed nonce verification
 File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
 Failed nonce verification
 
+========== 06/04/2018 5:22:05 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 06/04/2018 5:22:50 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+
+========== 06/04/2018 5:23:08 PM  ==========
+File: /Applications/MAMP/htdocs/sfc/wp-content/plugins/chordwp/includes/class-crd-sheet-music.php :: Line: 105
+Failed nonce verification
+

@@ -96,15 +96,16 @@
   </div>
 </section>
 
-<section id="join-us" class="bg" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/bg-clp-greyscale.png');">
+<section id="join-us" class="bg blue-img dark">
   <div class="container">
     <div class="mid-col">
-      <h2><span class="subtitle">Join Us</span>Christian Life Program</h2>
-      <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
-      <a href="/sfc/clp#register-clp" class="btn white hover-white inline">Register</a> <a href="/sfc/clp" class="btn hover-white inline">Learn More</a>
+      <div class="headline">
+        <h2><span class="subtitle">Join Us</span>Christian Life Program</h2>
+        <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
+        <a href="/sfc/clp#register-clp" class="btn white hover-white inline">Register</a> <a href="/sfc/clp" class="btn hover-white inline">Learn More</a>
+      </div>
     </div>
   </div>
-  <div class="dimmer"></div>
 </section>
 <?php endwhile; else: ?>
 <p>Sorry, no posts matched your criteria.</p>

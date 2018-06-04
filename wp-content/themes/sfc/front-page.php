@@ -60,24 +60,24 @@
         <h2 class=" ">
           <span class="subtitle">WHAT WE DO</span>
           Deepen Your Relationship With God</h2>
-        <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
+          <p>To this end, CFC SFC has on-going formation programs, household meetings, recollections, retreats, teachings, forums, and other activities designed to deepen your relationship with the Lord and with others in the community.</p>
       </div>
       <div class="columns col-max">
         <div class="col-3">
           <div class="col">
-            <div class="img"></div>
+            <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/repentance.jpg');"></div>
             <div class="info">
               <h4>Households</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+              <p>Become part of an environment for the support of the Christian life of singles and to provide a means of encouraging and hastening growth in the Christian life.</p>
             </div>
           </div>
         </div>
         <div class="col-3">
           <div class="col">
-            <div class="img"></div>
+            <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/teaching.jpg');"></div>
             <div class="info">
               <h4>Teaching Nights</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+              <p>Be nourished by God's Word as you learn more about His undying love for us and ways we can continue to grow in our faith in Him.</p>
             </div>
           </div>
         </div>
@@ -92,10 +92,10 @@
         </div>
         <div class="col-3">
           <div class="col">
-            <div class="img"></div>
+            <div class="img" style="background-image:url('<?php bloginfo('template_url'); ?>/assets/images/conference.jpg');"></div>
             <div class="info">
               <h4>Conferences</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras purus augue, auctor sed eros vel, sagittis. Consectetur adipiscing elit.</p>
+              <p>Join brothers and sisters from all over USA and Canada to learn more about your faith through worship, celebrate the Sacraments, and be part of a growing fellowship!</p>
             </div>
           </div>
         </div>
@@ -121,9 +121,12 @@
   <section id="clp-home">
     <div class="container">
       <div class="mid-col">
-        <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-black-cross.svg"/>
-        <h2 class=" align-center"><span class="subtitle">JOIN US</span>Christian Life Program</h2>
-        <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
+        <div class="headline">
+          <img src="<?php bloginfo('template_url'); ?>/assets/images/logo-black-cross.svg"/>
+          <h2 class=" align-center"><span class="subtitle">JOIN US</span>Christian Life Program</h2>
+          <p>The Christian Life Program (CLP), is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians.</p>
+        </div>
+
         <a href="/sfc/clp" class="btn">Learn More</a>
       </div>
     </div>
@@ -135,23 +138,26 @@
       </div>
       <div class="col-6">
         <div class="col">
-          <h2 class=" "><span class="subtitle">HELP THE POOR</span>Answering the Cry of the Poor</h2>
-          <p>ANCOP is an acronym which stands for Answering the Cry of the Poor. ANCOP USA shares Christ’s love among the poor, uplifts their lives, restores their dignity as children of God, and transforms communities.</p>
-          <a href="/sfc/ancop" class="btn">Learn More</a>
+          <div class="headline">
+            <h2 class=" "><span class="subtitle">HELP THE POOR</span>Answering the Cry of the Poor</h2>
+            <p>ANCOP is an acronym which stands for Answering the Cry of the Poor. ANCOP USA shares Christ’s love among the poor, uplifts their lives, restores their dignity as children of God, and transforms communities.</p>
+            <a href="/sfc/ancop" class="btn">Learn More</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="prayers-home" class="bg">
+  <section id="prayers-home" class="bg blue-img">
     <div class="container">
       <div class="mid-col">
-        <h2 class=" "><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
-        <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
-        <a href="/sfc/prayers" class="btn white hover-white">Make a Prayer Intention</a>
+        <div class="headline">
+          <h2 class=" "><span class="subtitle">OFFER YOUR PRAYERS</span>Prayer Intentions</h2>
+          <p>The Christian Life Program (CLP) is an integrated program that lead participants into a renewed understanding of God’s call to them as Christians. </p>
+          <a href="/sfc/prayers" class="btn white hover-white">Make a Prayer Intention</a>
+        </div>
       </div>
     </div>
-    <div class="dimmer"></div>
   </section>
 
   <section id="articles-home" class="bg grey">
